@@ -1,18 +1,18 @@
 [
     {
-        "merged": "C:\\Users\\Metarokusho\\Documents\\Distribuidor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1\\debug\\drawable-xxxhdpi\\logo.png",
-        "source": "C:\\Users\\Metarokusho\\Documents\\Distribuidor\\platforms\\android\\app\\src\\main\\res\\drawable-xxxhdpi\\logo.png"
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1/debug/drawable-xxxhdpi/background.png",
+        "source": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/src/main/res/drawable-xxxhdpi/background.png"
     },
     {
-        "merged": "C:\\Users\\Metarokusho\\Documents\\Distribuidor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1\\debug\\drawable-xxxhdpi\\menu.png",
-        "source": "C:\\Users\\Metarokusho\\Documents\\Distribuidor\\platforms\\android\\app\\src\\main\\res\\drawable-xxxhdpi\\menu.png"
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1/debug/drawable-xxxhdpi/icon.png",
+        "source": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/src/main/res/drawable-xxxhdpi/icon.png"
     },
     {
-        "merged": "C:\\Users\\Metarokusho\\Documents\\Distribuidor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1\\debug\\drawable-xxxhdpi\\background.png",
-        "source": "C:\\Users\\Metarokusho\\Documents\\Distribuidor\\platforms\\android\\app\\src\\main\\res\\drawable-xxxhdpi\\background.png"
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1/debug/drawable-xxxhdpi/menu.png",
+        "source": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/src/main/res/drawable-xxxhdpi/menu.png"
     },
     {
-        "merged": "C:\\Users\\Metarokusho\\Documents\\Distribuidor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1\\debug\\drawable-xxxhdpi\\icon.png",
-        "source": "C:\\Users\\Metarokusho\\Documents\\Distribuidor\\platforms\\android\\app\\src\\main\\res\\drawable-xxxhdpi\\icon.png"
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1/debug/drawable-xxxhdpi/logo.png",
+        "source": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/src/main/res/drawable-xxxhdpi/logo.png"
     }
 ]

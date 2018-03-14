@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3/debug/xml/chart_palettes_default_light.xml",
+        "source": "/Users/desarrollo/.android/build-cache/3928ffb10b1fc8a74aeb6253ec8bbca1c3e9abaa/output/res/xml/chart_palettes_default_light.xml"
+    },
+    {
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3/debug/xml/chart_palettes_dark_selected.xml",
+        "source": "/Users/desarrollo/.android/build-cache/3928ffb10b1fc8a74aeb6253ec8bbca1c3e9abaa/output/res/xml/chart_palettes_dark_selected.xml"
+    },
+    {
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3/debug/xml/chart_palettes_default_dark.xml",
+        "source": "/Users/desarrollo/.android/build-cache/3928ffb10b1fc8a74aeb6253ec8bbca1c3e9abaa/output/res/xml/chart_palettes_default_dark.xml"
+    },
+    {
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3/debug/xml/chart_palettes_light_selected.xml",
+        "source": "/Users/desarrollo/.android/build-cache/3928ffb10b1fc8a74aeb6253ec8bbca1c3e9abaa/output/res/xml/chart_palettes_light_selected.xml"
+    }
+]

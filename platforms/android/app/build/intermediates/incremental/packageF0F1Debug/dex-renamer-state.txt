@@ -1,4 +1,4 @@
-#Tue Feb 27 23:42:30 CST 2018
-base.0=C\:\\Users\\Metarokusho\\Documents\\Distribuidor\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\F0F1\\debug\\folders\\1000\\1f\\main
+#Tue Mar 06 10:02:16 CST 2018
+base.0=/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/transforms/dex/F0F1/debug/folders/1000/1f/main
 renamed.0=classes.dex
-file.0=C\:\\Users\\Metarokusho\\Documents\\Distribuidor\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\F0F1\\debug\\folders\\1000\\1f\\main\\classes.dex
+file.0=/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/transforms/dex/F0F1/debug/folders/1000/1f/main/classes.dex

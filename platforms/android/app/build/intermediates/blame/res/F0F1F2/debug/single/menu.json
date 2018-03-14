@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/menu/view_feedback_items_activity_menu.xml",
+        "source": "/Users/desarrollo/.android/build-cache/8a5dac7d043d1cf8db8a2e6bdd3d1a2839b23354/output/res/menu/view_feedback_items_activity_menu.xml"
+    },
+    {
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/menu/edit_details.xml",
+        "source": "/Users/desarrollo/.android/build-cache/8a5dac7d043d1cf8db8a2e6bdd3d1a2839b23354/output/res/menu/edit_details.xml"
+    },
+    {
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/menu/send_feedback_activity_menu.xml",
+        "source": "/Users/desarrollo/.android/build-cache/8a5dac7d043d1cf8db8a2e6bdd3d1a2839b23354/output/res/menu/send_feedback_activity_menu.xml"
+    }
+]

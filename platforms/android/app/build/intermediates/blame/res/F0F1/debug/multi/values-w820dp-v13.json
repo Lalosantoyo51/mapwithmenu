@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Metarokusho\\Documents\\Distribuidor\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeF0F1DebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
+        "outputFile": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/incremental/mergeF0F1DebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "C:\\Users\\Metarokusho\\.android\\build-cache\\3778edaaafb6e3b29f438b9cac10f3482b510656\\output\\res\\values-w820dp-v13\\values-w820dp-v13.xml",
+                    "file": "/Users/desarrollo/.android/build-cache/8a5dac7d043d1cf8db8a2e6bdd3d1a2839b23354/output/res/values-w820dp-v13/values-w820dp-v13.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

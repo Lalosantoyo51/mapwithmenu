@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3/debug/drawable-hdpi/menu.png",
+        "source": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/src/main/res/drawable-hdpi/menu.png"
+    },
+    {
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3/debug/drawable-hdpi/background.png",
+        "source": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/src/main/res/drawable-hdpi/background.png"
+    },
+    {
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3/debug/drawable-hdpi/icon.png",
+        "source": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/src/main/res/drawable-hdpi/icon.png"
+    },
+    {
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3/debug/drawable-hdpi/logo.png",
+        "source": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/src/main/res/drawable-hdpi/logo.png"
+    }
+]

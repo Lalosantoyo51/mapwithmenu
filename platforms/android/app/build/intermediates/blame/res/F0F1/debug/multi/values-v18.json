@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Metarokusho\\Documents\\Distribuidor\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeF0F1DebugResources\\merged.dir\\values-v18\\values-v18.xml",
+        "outputFile": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/incremental/mergeF0F1DebugResources/merged.dir/values-v18/values-v18.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 99
                 },
                 "from": {
-                    "file": "C:\\Users\\Metarokusho\\.android\\build-cache\\ee792822e713c21e0878c7be3dd8060d058fed51\\output\\res\\values-v18\\values-v18.xml",
+                    "file": "/Users/desarrollo/.android/build-cache/b7912f5e0c7aceaed7c4756412a124bcdc95d9f3/output/res/values-v18/values-v18.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

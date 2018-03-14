@@ -1,10 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\Metarokusho\\Documents\\Distribuidor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "C:\\Users\\Metarokusho\\.android\\build-cache\\ee792822e713c21e0878c7be3dd8060d058fed51\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/desarrollo/.android/build-cache/b7912f5e0c7aceaed7c4756412a124bcdc95d9f3/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Metarokusho\\Documents\\Distribuidor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "C:\\Users\\Metarokusho\\.android\\build-cache\\ee792822e713c21e0878c7be3dd8060d058fed51\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/desarrollo/.android/build-cache/b7912f5e0c7aceaed7c4756412a124bcdc95d9f3/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
     }
 ]

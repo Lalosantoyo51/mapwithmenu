@@ -1,18 +1,18 @@
 [
     {
-        "merged": "C:\\Users\\Metarokusho\\Documents\\Distribuidor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1\\debug\\xml\\chart_palettes_default_dark.xml",
-        "source": "C:\\Users\\Metarokusho\\.android\\build-cache\\a77f96cc1e444d1ed663c978502cfd610c74905e\\output\\res\\xml\\chart_palettes_default_dark.xml"
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1/debug/xml/chart_palettes_dark_selected.xml",
+        "source": "/Users/desarrollo/.android/build-cache/3928ffb10b1fc8a74aeb6253ec8bbca1c3e9abaa/output/res/xml/chart_palettes_dark_selected.xml"
     },
     {
-        "merged": "C:\\Users\\Metarokusho\\Documents\\Distribuidor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1\\debug\\xml\\chart_palettes_dark_selected.xml",
-        "source": "C:\\Users\\Metarokusho\\.android\\build-cache\\a77f96cc1e444d1ed663c978502cfd610c74905e\\output\\res\\xml\\chart_palettes_dark_selected.xml"
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1/debug/xml/chart_palettes_default_dark.xml",
+        "source": "/Users/desarrollo/.android/build-cache/3928ffb10b1fc8a74aeb6253ec8bbca1c3e9abaa/output/res/xml/chart_palettes_default_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Metarokusho\\Documents\\Distribuidor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1\\debug\\xml\\chart_palettes_default_light.xml",
-        "source": "C:\\Users\\Metarokusho\\.android\\build-cache\\a77f96cc1e444d1ed663c978502cfd610c74905e\\output\\res\\xml\\chart_palettes_default_light.xml"
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1/debug/xml/chart_palettes_default_light.xml",
+        "source": "/Users/desarrollo/.android/build-cache/3928ffb10b1fc8a74aeb6253ec8bbca1c3e9abaa/output/res/xml/chart_palettes_default_light.xml"
     },
     {
-        "merged": "C:\\Users\\Metarokusho\\Documents\\Distribuidor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1\\debug\\xml\\chart_palettes_light_selected.xml",
-        "source": "C:\\Users\\Metarokusho\\.android\\build-cache\\a77f96cc1e444d1ed663c978502cfd610c74905e\\output\\res\\xml\\chart_palettes_light_selected.xml"
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1/debug/xml/chart_palettes_light_selected.xml",
+        "source": "/Users/desarrollo/.android/build-cache/3928ffb10b1fc8a74aeb6253ec8bbca1c3e9abaa/output/res/xml/chart_palettes_light_selected.xml"
     }
 ]

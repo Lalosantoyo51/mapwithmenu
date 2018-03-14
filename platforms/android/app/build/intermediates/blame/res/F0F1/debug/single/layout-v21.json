@@ -1,18 +1,18 @@
 [
     {
-        "merged": "C:\\Users\\Metarokusho\\Documents\\Distribuidor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1\\debug\\layout-v21\\notification_action.xml",
-        "source": "C:\\Users\\Metarokusho\\.android\\build-cache\\ee792822e713c21e0878c7be3dd8060d058fed51\\output\\res\\layout-v21\\notification_action.xml"
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/desarrollo/.android/build-cache/b7912f5e0c7aceaed7c4756412a124bcdc95d9f3/output/res/layout-v21/notification_template_custom_big.xml"
     },
     {
-        "merged": "C:\\Users\\Metarokusho\\Documents\\Distribuidor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1\\debug\\layout-v21\\notification_action_tombstone.xml",
-        "source": "C:\\Users\\Metarokusho\\.android\\build-cache\\ee792822e713c21e0878c7be3dd8060d058fed51\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1/debug/layout-v21/notification_action.xml",
+        "source": "/Users/desarrollo/.android/build-cache/b7912f5e0c7aceaed7c4756412a124bcdc95d9f3/output/res/layout-v21/notification_action.xml"
     },
     {
-        "merged": "C:\\Users\\Metarokusho\\Documents\\Distribuidor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1\\debug\\layout-v21\\notification_template_icon_group.xml",
-        "source": "C:\\Users\\Metarokusho\\.android\\build-cache\\ee792822e713c21e0878c7be3dd8060d058fed51\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/desarrollo/.android/build-cache/b7912f5e0c7aceaed7c4756412a124bcdc95d9f3/output/res/layout-v21/notification_template_icon_group.xml"
     },
     {
-        "merged": "C:\\Users\\Metarokusho\\Documents\\Distribuidor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1\\debug\\layout-v21\\notification_template_custom_big.xml",
-        "source": "C:\\Users\\Metarokusho\\.android\\build-cache\\ee792822e713c21e0878c7be3dd8060d058fed51\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+        "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/desarrollo/.android/build-cache/b7912f5e0c7aceaed7c4756412a124bcdc95d9f3/output/res/layout-v21/notification_action_tombstone.xml"
     }
 ]

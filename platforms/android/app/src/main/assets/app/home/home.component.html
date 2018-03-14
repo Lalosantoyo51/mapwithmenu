@@ -37,8 +37,8 @@ it shouldn't have any other siblings other than the <ActionBar> component.
         (markerSelect)="onMarkerEvent($event)" (markerBeginDragging)="onMarkerEvent($event)"
         (markerEndDragging)="onMarkerEvent($event)" (markerDrag)="onMarkerEvent($event)"
         (markerInfoWindowTapped)="onMarkerEvent($event)" (coordinateTapped)="onCoordinateTapped($event)"
-        (cameraChanged)="onCameraChanged($event)"></MapView>
+        (cameraChanged)="onCameraChanged($event)" ></MapView>
+        <img class="marketblue" src="~/images/marketazul.png" height="90px" width="85px" (tap)="hola(mapView)">
 
-    
     </GridLayout>
 </RadSideDrawer>

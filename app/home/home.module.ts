@@ -9,11 +9,13 @@ import { HomeComponent } from "./home.component";
     imports: [
         NativeScriptCommonModule,
         HomeRoutingModule,
-        SharedModule
+        SharedModule,
+       
     ],
     declarations: [
         HomeComponent
     ],
+  
     schemas: [
         NO_ERRORS_SCHEMA
     ]
