@@ -4,6 +4,14 @@
         "directory": "../../node_modules/nativescript-angular"
     },
     {
+        "name": "nativescript-drop-down",
+        "directory": "../../node_modules/nativescript-drop-down"
+    },
+    {
+        "name": "nativescript-feedback",
+        "directory": "../../node_modules/nativescript-feedback"
+    },
+    {
         "name": "nativescript-geolocation",
         "directory": "../../node_modules/nativescript-geolocation"
     },
@@ -16,8 +24,20 @@
         "directory": "../../node_modules/nativescript-google-maps-utils"
     },
     {
+        "name": "nativescript-image-zoom",
+        "directory": "../../node_modules/nativescript-image-zoom"
+    },
+    {
+        "name": "nativescript-loading-indicator",
+        "directory": "../../node_modules/nativescript-loading-indicator"
+    },
+    {
         "name": "nativescript-pro-ui",
         "directory": "../../node_modules/nativescript-pro-ui"
+    },
+    {
+        "name": "nativescript-star-ratings",
+        "directory": "../../node_modules/nativescript-star-ratings"
     },
     {
         "name": "nativescript-theme-core",

@@ -1,0 +1,69 @@
+{
+  "_from": "nativescript-google-maps-utils",
+  "_id": "nativescript-google-maps-utils@0.1.3",
+  "_inBundle": false,
+  "_integrity": "sha1-nJ2JFm8/gOR7m0BvAbTMwc6kQYQ=",
+  "_location": "/nativescript-google-maps-utils",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "nativescript-google-maps-utils",
+    "name": "nativescript-google-maps-utils",
+    "escapedName": "nativescript-google-maps-utils",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-google-maps-utils/-/nativescript-google-maps-utils-0.1.3.tgz",
+  "_shasum": "9c9d89166f3f80e47b9b406f01b4ccc1cea44184",
+  "_spec": "nativescript-google-maps-utils",
+  "_where": "/Users/desarrollo/Documents/Lalo/mapwithmenu",
+  "author": {
+    "name": "Nader Toukabri",
+    "email": "contact@nader.tn"
+  },
+  "bugs": {
+    "url": "https://github.com/naderio/nativescript-google-maps-utils/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "nativescript-google-maps-sdk": "*"
+  },
+  "deprecated": false,
+  "description": "NativeScript Google Maps SDK utility library to support features such as marker clustering, heatmap, ...",
+  "devDependencies": {
+    "tns-core-modules": "^3.0.1",
+    "tns-platform-declarations": "^3.0.1",
+    "typescript": "^2.3.4"
+  },
+  "homepage": "https://github.com/naderio/nativescript-google-maps-utils#readme",
+  "keywords": [
+    "nativescript",
+    "google maps",
+    "marker cluster",
+    "heatmap"
+  ],
+  "license": "Unlicense",
+  "main": "index",
+  "name": "nativescript-google-maps-utils",
+  "nativescript": {
+    "platforms": {
+      "ios": "2.0.0",
+      "android": "2.0.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naderio/nativescript-google-maps-utils.git"
+  },
+  "scripts": {
+    "dev": "rsync -avz --delete ./*.js demo/dev/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.3"
+}

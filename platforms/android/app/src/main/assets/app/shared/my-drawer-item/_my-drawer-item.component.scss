@@ -9,11 +9,12 @@ $sidedrawer-list-icon-size: 20;
     padding-left: $sidedrawer-list-item-offset-left;
     Label {
         vertical-align: center;
-        color: $blue-dark;
+        color: $item-color-android;
     }
     .fa {
         width: $sidedrawer-list-icon-size;
         margin-right: $sidedrawer-list-icon-offset;
+        color: $warning-light; 
     }
     &.selected {
         background-color: $item-active-background;

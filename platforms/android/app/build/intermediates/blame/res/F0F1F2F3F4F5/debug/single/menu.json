@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3F4F5/debug/menu/view_feedback_items_activity_menu.xml",
+        "source": "/Users/desarrollo/.android/build-cache/8660dc6f5d0a559f19a45b30572b0c2b8009921b/output/res/menu/view_feedback_items_activity_menu.xml"
+    },
+    {
+        "merged": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3F4F5/debug/menu/edit_details.xml",
+        "source": "/Users/desarrollo/.android/build-cache/8660dc6f5d0a559f19a45b30572b0c2b8009921b/output/res/menu/edit_details.xml"
+    },
+    {
+        "merged": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3F4F5/debug/menu/send_feedback_activity_menu.xml",
+        "source": "/Users/desarrollo/.android/build-cache/8660dc6f5d0a559f19a45b30572b0c2b8009921b/output/res/menu/send_feedback_activity_menu.xml"
+    }
+]

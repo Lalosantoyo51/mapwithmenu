@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3F4F5/debug/drawable-hdpi/menu.png",
+        "source": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/src/main/res/drawable-hdpi/menu.png"
+    },
+    {
+        "merged": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3F4F5/debug/drawable-hdpi/icon.png",
+        "source": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/src/main/res/drawable-hdpi/icon.png"
+    },
+    {
+        "merged": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3F4F5/debug/drawable-hdpi/erroricon.png",
+        "source": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/src/F0/res/drawable-hdpi/erroricon.png"
+    },
+    {
+        "merged": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3F4F5/debug/drawable-hdpi/logo.png",
+        "source": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/src/main/res/drawable-hdpi/logo.png"
+    },
+    {
+        "merged": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3F4F5/debug/drawable-hdpi/background.png",
+        "source": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/src/main/res/drawable-hdpi/background.png"
+    }
+]

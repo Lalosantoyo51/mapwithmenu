@@ -1,15 +1,11 @@
-android {
+android { 
 	productFlavors {
-		"nativescript-pro-ui" {
-			dimension "nativescript-pro-ui"
+		"nativescript-google-maps-utils" {
+			dimension "nativescriptgooglemapsutils"
 		}
 	}
 }
 
-def supportVersion = project.hasProperty("supportVersion") ? project.supportVersion : "23.1.0"
-
 dependencies {
-	compile "com.android.support:appcompat-v7:$supportVersion"
-	compile "com.android.support:recyclerview-v7:$supportVersion"
-	compile "com.android.support:design:$supportVersion"
+    compile 'com.google.maps.android:android-maps-utils:0.5'
 }

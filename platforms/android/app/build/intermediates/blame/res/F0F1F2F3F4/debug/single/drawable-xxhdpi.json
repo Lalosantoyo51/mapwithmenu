@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3F4/debug/drawable-xxhdpi/icon.png",
+        "source": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/src/main/res/drawable-xxhdpi/icon.png"
+    },
+    {
+        "merged": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3F4/debug/drawable-xxhdpi/warningicon.png",
+        "source": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/src/F0/res/drawable-xxhdpi/warningicon.png"
+    },
+    {
+        "merged": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3F4/debug/drawable-xxhdpi/erroricon.png",
+        "source": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/src/F0/res/drawable-xxhdpi/erroricon.png"
+    },
+    {
+        "merged": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3F4/debug/drawable-xxhdpi/menu.png",
+        "source": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/src/main/res/drawable-xxhdpi/menu.png"
+    },
+    {
+        "merged": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3F4/debug/drawable-xxhdpi/infoicon.png",
+        "source": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/src/F0/res/drawable-xxhdpi/infoicon.png"
+    },
+    {
+        "merged": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3F4/debug/drawable-xxhdpi/background.png",
+        "source": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/src/main/res/drawable-xxhdpi/background.png"
+    },
+    {
+        "merged": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3F4/debug/drawable-xxhdpi/burrito.png",
+        "source": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/src/main/res/drawable-xxhdpi/burrito.png"
+    },
+    {
+        "merged": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3F4/debug/drawable-xxhdpi/logo.png",
+        "source": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/src/main/res/drawable-xxhdpi/logo.png"
+    },
+    {
+        "merged": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3F4/debug/drawable-xxhdpi/successicon.png",
+        "source": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/src/F0/res/drawable-xxhdpi/successicon.png"
+    }
+]

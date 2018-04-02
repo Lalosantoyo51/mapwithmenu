@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3/debug/drawable-xhdpi/icon.png",
+        "source": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/src/main/res/drawable-xhdpi/icon.png"
+    },
+    {
         "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3/debug/drawable-xhdpi/icon.png",
         "source": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/src/main/res/drawable-xhdpi/icon.png"
     },
@@ -8,11 +12,23 @@
         "source": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/src/main/res/drawable-xhdpi/menu.png"
     },
     {
+        "merged": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3/debug/drawable-xhdpi/logo.png",
+        "source": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/src/main/res/drawable-xhdpi/logo.png"
+    },
+    {
         "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3/debug/drawable-xhdpi/logo.png",
         "source": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/src/main/res/drawable-xhdpi/logo.png"
     },
     {
+        "merged": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3/debug/drawable-xhdpi/background.png",
+        "source": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/src/main/res/drawable-xhdpi/background.png"
+    },
+    {
         "merged": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3/debug/drawable-xhdpi/background.png",
         "source": "/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/src/main/res/drawable-xhdpi/background.png"
+    },
+    {
+        "merged": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/res/merged/F0F1F2F3/debug/drawable-xhdpi/menu.png",
+        "source": "/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/src/main/res/drawable-xhdpi/menu.png"
     }
 ]

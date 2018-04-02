@@ -3,12 +3,12 @@
 
     <item
         is-multidex="false"
-        jar="/Users/desarrollo/.android/build-cache/1a9aa1d70337e152f984a16c42179b693667171c/output/jars/classes.jar"
+        jar="/Users/desarrollo/.android/build-cache/4431419b9c2a8be786343e96405e51c8aea0ba0e/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="27.0.3"
-        sha1="5ad3911825107d8dd4b017fdecebfd23c08048dd">
-        <dex dex="/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/pre-dexed/F0F1/debug/classes_53177e78442f31d931e7195a9ffb69ae8724de69.jar" />
+        sha1="c2ac2f4c696c3e096ae3ba9d65f8c3792af5eb9b">
+        <dex dex="/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/pre-dexed/F0F1F2F3F4F5/debug/classes_0282c3c56ab5f37f164f03e82a06bffb53b60772.jar" />
     </item>
     <item
         is-multidex="false"
@@ -21,12 +21,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/desarrollo/.android/build-cache/ed2e46c7f5e2ef1c154e1b5a6a953b93f5128ff2/output/jars/classes.jar"
+        jar="/Users/desarrollo/.android/build-cache/ba9c40d1578ef1d09f592e9d8aa336249ae778fe/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="27.0.3"
-        sha1="ce22401852bd9e460265a9a1567f7cedb6fc91b9">
-        <dex dex="/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/pre-dexed/F0F1/debug/classes_4aa5d5022e201d036acc6ce5f52eb654e8a3889a.jar" />
+        sha1="21ece50b870a8bea45608a6748ad60112d5d9ed1">
+        <dex dex="/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/pre-dexed/F0F1F2F3/debug/classes_f09656ba59b21cdd8da745047eff1ba489e8b0fa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/desarrollo/.android/build-cache/122737c0b8371bda019c4d1d3199431b13372c94/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="9ffa5b2e37c626bd25cfbff4df099cdf068595f9">
+        <dex dex="/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/pre-dexed/F0F1F2F3/debug/classes_11efbb6c3dfc13cdbc71cb3d5be02c77fec5af2d.jar" />
     </item>
     <item
         is-multidex="false"
@@ -57,6 +66,33 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/desarrollo/.android/build-cache/f91fe6237f3a2046c7a3dc1b14e6953246d88a49/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="1a10332e561dbad9fd003560979e6202383d0d2c">
+        <dex dex="/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/pre-dexed/F0F1F2F3F4F5/debug/classes_abf69f9103c9a54e109b66b0e8da7574d43cde89.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/desarrollo/.android/build-cache/2fe0bb1479c4f5ba9357f8f3e173a44986398d56/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="556dc4e7734c7445d7310a625fad89c5be6728b2">
+        <dex dex="/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/pre-dexed/F0F1F2F3/debug/classes_6d97b41b909137c16b4ce0d9fc157ede0d904c95.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/desarrollo/.android/build-cache/a4e19b3f29fb6d9f4817d1fd34826cce58f57639/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="16dfa5cc51cd9a9e2809e48ceb26724a29861fdd">
+        <dex dex="/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/pre-dexed/F0F1F2F3/debug/classes_4bb894ac4cce0aed61f5d159a620d4a1998a5377.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/desarrollo/.android/build-cache/8fbbbdcc6f8adc0834ac211fe416962b1f476785/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -72,6 +108,15 @@
         revision="27.0.3"
         sha1="746274223beb11b1cda7854d7eec3038695c2c93">
         <dex dex="/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/pre-dexed/F0F1/debug/classes_cc9919ef2963ff7a661139b565dfd5f75a53c605.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/desarrollo/.android/build-cache/15690b4f16fd8dcb60e7e8cf469d4db1e6b579c8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="dd431d6aa9ce9dc0d429fcd239d412a82ea0e9a7">
+        <dex dex="/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/pre-dexed/F0F1F2F3/debug/classes_c36ad326b788d150828e508d9bd11ac963c7f6b3.jar" />
     </item>
     <item
         is-multidex="false"
@@ -93,6 +138,87 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/desarrollo/.android/build-cache/ac680e3cf9f79c9714a4a32339a99e9ef8c5252e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="ae411cd0dd58ad905486a0bc7931ec5adf3a2d13">
+        <dex dex="/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/pre-dexed/F0F1F2F3/debug/classes_6b116187032942a1fa0f534bc6efce2f7ebbca94.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/desarrollo/.android/build-cache/38e3e35f4dac6a014b632cb0854d6a57ca67be70/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="d2af2ef4d987d753f2e8ee2d1480ab964d5c7273">
+        <dex dex="/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/pre-dexed/F0F1/debug/classes_b2920f35bc2bcab63394e3763b5bfaa0bc83d0f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/desarrollo/.android/build-cache/e2a9106c91c864c8105e1b5279cc113f06558fcd/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="ae411cd0dd58ad905486a0bc7931ec5adf3a2d13">
+        <dex dex="/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/pre-dexed/F0F1/debug/classes_e73b8b6f7e14ff2dfce3520d9915984511d4770c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/desarrollo/.android/build-cache/1a9aa1d70337e152f984a16c42179b693667171c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="5ad3911825107d8dd4b017fdecebfd23c08048dd">
+        <dex dex="/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/pre-dexed/F0F1/debug/classes_53177e78442f31d931e7195a9ffb69ae8724de69.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/desarrollo/.android/build-cache/50fd418d4e42e77408cc447543cd00fa4f7357b1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="4df8aad66215f497722e05820383f9ff04796fea">
+        <dex dex="/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/pre-dexed/F0F1F2F3/debug/classes_e13f150c981c63661f52e17a0c9ad48d8f3b13fd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/desarrollo/.android/build-cache/8660dc6f5d0a559f19a45b30572b0c2b8009921b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="0eed9e468431f447bf63f3a0cee23418e8994411">
+        <dex dex="/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/pre-dexed/F0F1F2F3/debug/classes_4b768ec216ee0945325f2dc439cf3abfca48c482.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/desarrollo/.android/build-cache/ed2e46c7f5e2ef1c154e1b5a6a953b93f5128ff2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="ce22401852bd9e460265a9a1567f7cedb6fc91b9">
+        <dex dex="/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/pre-dexed/F0F1/debug/classes_4aa5d5022e201d036acc6ce5f52eb654e8a3889a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/desarrollo/.android/build-cache/d0616fb80edb0364c801ebaf2ac0a10ec7f0ca97/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="ce22401852bd9e460265a9a1567f7cedb6fc91b9">
+        <dex dex="/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/pre-dexed/F0F1F2F3/debug/classes_fa3f81c53c58dfc2b020b084d41466d40d1b01d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/desarrollo/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.0.1/287742f1c6cea6d9126670e9f031890b0462362a/support-annotations-27.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="287742f1c6cea6d9126670e9f031890b0462362a">
+        <dex dex="/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/pre-dexed/F0F1F2F3F4F5/debug/support-annotations-27.0.1_99ccc58d8079ff38ff96a847b94eaefe39c7442b.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/desarrollo/.android/build-cache/a464c8545ae06fbca33eb553ea70300fb0848c56/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -111,15 +237,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/desarrollo/.android/build-cache/38e3e35f4dac6a014b632cb0854d6a57ca67be70/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="27.0.3"
-        sha1="d2af2ef4d987d753f2e8ee2d1480ab964d5c7273">
-        <dex dex="/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/pre-dexed/F0F1/debug/classes_b2920f35bc2bcab63394e3763b5bfaa0bc83d0f1.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/desarrollo/.android/build-cache/b355991311a4b1a318e8695a7d57d9966e32d17d/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -129,12 +246,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/desarrollo/.android/build-cache/e2a9106c91c864c8105e1b5279cc113f06558fcd/output/jars/classes.jar"
+        jar="/Users/desarrollo/.android/build-cache/c5bf545315befa83252119b6853d66ca78d4a58d/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="27.0.3"
-        sha1="ae411cd0dd58ad905486a0bc7931ec5adf3a2d13">
-        <dex dex="/Users/desarrollo/Documents/Lalo/mapwithmenu/platforms/android/app/build/intermediates/pre-dexed/F0F1/debug/classes_e73b8b6f7e14ff2dfce3520d9915984511d4770c.jar" />
+        sha1="746274223beb11b1cda7854d7eec3038695c2c93">
+        <dex dex="/Users/desarrollo/Desktop/mapwithmenu/platforms/android/app/build/intermediates/pre-dexed/F0F1F2F3/debug/classes_85df94dd7e28385d2524dc83a7a58c5597b27705.jar" />
     </item>
 
 </items>
