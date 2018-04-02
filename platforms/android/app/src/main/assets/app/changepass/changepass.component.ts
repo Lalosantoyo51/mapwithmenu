@@ -4,7 +4,7 @@ import { RadSideDrawerComponent } from "nativescript-pro-ui/sidedrawer/angular";
 import { EventData } from "data/observable";
 import { Label } from "ui/label";
 import { RouterExtensions } from "nativescript-angular/router";
-import {ProfileService} from ".././post.services/changepassword.services"
+
 import { Page } from "ui/page";
 import { Observable } from "rxjs/Observable";
 import { alert } from "ui/dialogs";
@@ -14,7 +14,7 @@ import { alert } from "ui/dialogs";
     moduleId: module.id,
     templateUrl: "./changepass.component.html",
     styleUrls: ['./changepass.component.css'],
-    providers:[ProfileService]
+
 })
 export class ChangepassComponent implements OnInit {
     phone:string = "";
@@ -24,7 +24,7 @@ export class ChangepassComponent implements OnInit {
     selectedIndex = 1;
 
 
-    constructor(private router : RouterExtensions, private profileService : ProfileService) {
+    constructor(private router : RouterExtensions, ) {
        
     }
     /* ***********************************************************
@@ -55,27 +55,7 @@ export class ChangepassComponent implements OnInit {
     }
     createProfile() : void {
        
-        console.log(this.profileService.URL)
-        this.profileService.create({
-        phone:this.phone,
-        password:this.password,
-        newpassword:this.newpassword
-      
-        }).subscribe((profile)=>{
-            alert(JSON.stringify(profile)).then(() => {
-                console.log("Race chosen!");
-            });
 
-            console.log(JSON.stringify(profile));
-        },(error)=>{
-        
-         
-            // << alert-dialog-code
-            console.log(JSON.stringify(error));
-                // >> alert-dialog-code
- 
-            
-        });
         
        
           

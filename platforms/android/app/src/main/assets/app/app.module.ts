@@ -5,8 +5,6 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 
 import { NSModuleFactoryLoader } from "nativescript-angular/router";
-import {AuthService} from "./post.services/conex.services";
-import {ProfileService} from "./post.services/changepassword.services";
 @NgModule({
     bootstrap: [
         AppComponent
@@ -20,8 +18,7 @@ import {ProfileService} from "./post.services/changepassword.services";
         AppComponent
     ],
     providers: [
-        ProfileService,
-        AuthService,
+      
    
     ],
     schemas: [

@@ -4,9 +4,6 @@ import { Component, ElementRef, ViewChild,OnInit } from "@angular/core";
 import {registerElement} from "nativescript-angular/element-registry";
 import { MapView, Marker, Position } from 'nativescript-google-maps-sdk';
 import { Location, getCurrentLocation, isEnabled, distance, enableLocationRequest } from "nativescript-geolocation";
-
-import {ProfileService} from ".././post.services/changepassword.services"
-
 // << import-geolocation-plugin
 import { SegmentedBarItem } from "ui/segmented-bar";
 import { Accuracy } from "ui/enums";
@@ -18,7 +15,7 @@ registerElement('MapView', () => MapView);
     moduleId: module.id,
     templateUrl: "./home.component.html",
     styleUrls: ['map.css'],
-    providers:[ProfileService]
+   
    
   
 })
