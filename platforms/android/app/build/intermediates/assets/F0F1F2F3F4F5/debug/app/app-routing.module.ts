@@ -3,7 +3,7 @@ import { Routes } from "@angular/router";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 
 const routes: Routes = [
-    { path: "", redirectTo: "todos", pathMatch: "full" },
+    { path: "", redirectTo: "orders/orders", pathMatch: "full" },
     { path: "home", loadChildren: "./home/home.module#HomeModule" },
     { path: "browse", loadChildren: "./browse/browse.module#BrowseModule" },
     { path: "search", loadChildren: "./search/search.module#SearchModule" },
@@ -12,9 +12,13 @@ const routes: Routes = [
     { path: "Changepass", loadChildren: "./changepass/changepass.module#ChangepassModule" },
     { path: "auth", loadChildren: "./components/auth/auth.module#AuthModule" },
     { path: "errors", loadChildren: "./components/errors/errors.module#ErrorsModule" },
-    { path: "sales", loadChildren: "./components/sales/sales.module#SalesModule" },
+    { path: "orders", loadChildren: "./components/orders/orders.module#OrdersModule" },
     { path: "about", loadChildren: "./components/about/about.module#AboutModule" },
     { path: "todos", loadChildren: "./components/todos/todos.module#TodosModule" },
+    { path: "profile", loadChildren: "./components/profile/profile.module#ProfileModule" },
+    { path: "map", loadChildren: "./components/map/map.module#MapModule" },
+
+
 
 
 

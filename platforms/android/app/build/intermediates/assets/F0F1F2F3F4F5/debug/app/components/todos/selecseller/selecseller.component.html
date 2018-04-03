@@ -24,7 +24,7 @@
         Use the tkDrawerContent directive to display the content of the app drawer on this page.
         -->
         <StackLayout tkDrawerContent>
-            <MyDrawer [selectedPage]="'Home'"></MyDrawer>
+            <MyDrawer [selectedPage]="'Intercambiar'"></MyDrawer>
         </StackLayout>
         
         <!--
@@ -32,66 +32,23 @@
         -->
         <GridLayout class="page page-content" tkMainContent>
             <StackLayout >
-                <img row="0" src="~/assets/p1.png" height="200px">
-                <label class="h3 m-15"  text="Seleccionar producto"></label>
+                <img row="0" src="~/assets/p2.png" height="200px">
+                <label  horizontalAlignment="center" verticalAlignment="center"  class="h3 m-15"  text="Seleccionar un vendedor"></label>
     
-                        <SackLayout >
-                                    <GridLayout    columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"  >
-                                            <Label class="h3 m-5" width="150" height="50" row="0" id="productss" text="burro de rojo"></Label>
-                                            <Label width="20"  height="50" row="0" class="h3 m-15" col="2" text="0"(tap)="hola(name)"></Label>
-                                            <button width="40"height="50"  row="0" class="la" col="1" text="+"  (tap)="suma(name)"></button>
-                                            <button width="40" height="50"  row="0" class="la" col="3" text="-"  (tap)="resta()"></button>
-                                    </GridLayout>
-                            
-                            </SackLayout>
-                            <SackLayout >
-    
-                                <GridLayout    columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"  >
-                                        <Label class="h3 m-5" width="150" height="50" row="0" id="productss" text="burro de rojo"></Label>
-                                        <Label width="20"  height="50" row="0" class="h3 m-15" col="2" text="0"(tap)="hola(name)"></Label>
-                                        <button width="40"height="50"  row="0" class="la" col="1" text="+"  (tap)="suma(name)"></button>
-                                        <button width="40" height="50"  row="0" class="la" col="3" text="-"  (tap)="resta()"></button>
-                                </GridLayout>
-                        
-                        </SackLayout>
-                        <SackLayout >
-    
-                            <GridLayout    columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"  >
-                                    <Label class="h3 m-5" width="150" height="50" row="0" id="productss" text="burro de rojo"></Label>
-                                    <Label width="20"  height="50" row="0" class="h3 m-15" col="2" text="0"(tap)="hola(name)"></Label>
-                                    <button width="40"height="50"  row="0" class="la" col="1" text="+"  (tap)="suma(name)"></button>
-                                    <button width="40" height="50"  row="0" class="la" col="3" text="-"  (tap)="resta()"></button>
+                <GridLayout  horizontalAlignment="center" verticalAlignment="center"  class="dropdown" borderRadius="5" horizontalAlignment="center" verticalAlignment="center">
+                                <DropDown #dd
+                                [class]="cssClass"
+                                [items]="items"
+                                [(ngModel)]="selectedIndex"
+                                hint="Seleccionar Vendedor"
+                                (selectedIndexChanged)="onchange($event)"
+                                (opened)="onopen()"
+                                (closed)="onclose()"
+                                row="0"
+                                colSpan="2"></DropDown>
                             </GridLayout>
-                    
-                    </SackLayout>
-                    <SackLayout >
-    
-                        <GridLayout    columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"  >
-                                <Label class="h3 m-5" width="150" height="50" row="0" id="productss" text="burro de rojo"></Label>
-                                <Label width="20"  height="50" row="0" class="h3 m-15" col="2" text="0"(tap)="hola(name)"></Label>
-                                <button width="40"height="50"  row="0" class="la" col="1" text="+"  (tap)="suma(name)"></button>
-                                <button width="40" height="50"  row="0" class="la" col="3" text="-"  (tap)="resta()"></button>
-                        </GridLayout>
+                            
                 
-                </SackLayout>
-                    <!-- <Label class="h3 m-5" width="150" height="50" row="3" text="Burro de bistec"></Label>
-                    <Label width="20"   height="50" row="3" class="h3 m-15" col="2" text="0" [text]="result2"></Label>
-                    <button width="40"height="50"  row="3" class="la" col="1" text="+" (tap)="suma2()"></button>
-                    <button width="40" height="50"  row="3" class="la" col="3" text="-"  (tap)="resta2()"></button>
-            
-                    <Label class="h3 m-5" width="150" height="50" row="4" text="Burro de papas"></Label>
-                    <Label width="20"  height="50" row="4" class="h3 m-15" col="2" text="0"  [text]="result3"></Label>
-                    <button width="40" height="50"  row="4" class="la" col="1" text="+"(tap)="suma3()" ></button>
-                    <button width="40"  height="50"  row="4" class="la" col="3" text="-"  (tap)="resta3()"></button>
-                    
-                    
-                     -->
-            
-                
-               
-                      
-                
-        
             <GridLayout class="m-15" columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto">
                     <button class="btnn" width="150"  height="50"  row="1" col="0" (tap)="wizard1()"  text="<"></button>
                     <label text="      " width="50"row="1" col="1"></label> 

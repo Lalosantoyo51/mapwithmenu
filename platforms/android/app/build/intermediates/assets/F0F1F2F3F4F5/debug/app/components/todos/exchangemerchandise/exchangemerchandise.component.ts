@@ -12,6 +12,7 @@ import { RouterExtensions } from "nativescript-angular/router";
     selector: "exchangemerchandise",
     moduleId: module.id,
     templateUrl: "./exchangemerchandise.component.html",
+    styleUrls: ['./exchangemerchandise.css'],
 
    
    
