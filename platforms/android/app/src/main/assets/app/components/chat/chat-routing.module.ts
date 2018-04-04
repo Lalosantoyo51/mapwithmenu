@@ -1,10 +1,13 @@
 import { NgModule } from "@angular/core";
 import { Routes } from "@angular/router";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { ChatComponent } from "./chat.component";
+import { ChatComponent } from "./chat/chat.component";
+import { ListchatComponent } from "./listchat/listchat.component";
 
 const routes: Routes = [
-    { path: "", component: ChatComponent }
+    { path: "chat", component: ChatComponent },
+    { path: "listchat", component: ListchatComponent }
+
 ];
 
 @NgModule({
