@@ -19,6 +19,10 @@ import { RouterExtensions } from "nativescript-angular/router";
   
 })
 export class EatComponent  {
+    @ViewChild("drawer") drawerComponent: RadSideDrawerComponent;
+    onDrawerButtonTap(): void {
+        this.drawerComponent.sideDrawer.showDrawer();
+    }
    
    
 }

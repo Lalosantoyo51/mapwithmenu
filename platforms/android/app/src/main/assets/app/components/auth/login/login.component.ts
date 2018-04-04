@@ -3,7 +3,7 @@ import { RouterExtensions } from 'nativescript-angular/router';
 import { Color } from "color";
 import { View } from "ui/core/view";
 import { Page } from "ui/page";
-import {AuthService} from "../../../services/auth.services"
+import {AuthService} from "../../../services/auth.service"
 import { LoadingIndicator } from "nativescript-loading-indicator";
 import { Feedback, FeedbackType, FeedbackPosition } from "nativescript-feedback";
 

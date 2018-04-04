@@ -10,6 +10,10 @@ import * as utils from "utils/utils";
     styleUrls: ['./orders.component.css'],
 })
 export class OrdersComponent implements OnInit {
+    @ViewChild("drawer") drawerComponent: RadSideDrawerComponent;
     constructor(){}
     ngOnInit(): void {}
+    onDrawerButtonTap(): void {
+        this.drawerComponent.sideDrawer.showDrawer();
+    }
 }

@@ -19,6 +19,17 @@ import { RouterExtensions } from "nativescript-angular/router";
   
 })
 export class SelectproductsComponent  {
+    constructor(private router : RouterExtensions) {
+   
+    }
+    next(){
+        this.router.navigate(['/sellers/selectseller']);
+         
+    }
+    @ViewChild("drawer") drawerComponent: RadSideDrawerComponent;
+    onDrawerButtonTap(): void {
+        this.drawerComponent.sideDrawer.showDrawer();
+    }
    
    
 }

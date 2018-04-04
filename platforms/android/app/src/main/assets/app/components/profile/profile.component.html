@@ -9,7 +9,7 @@
     <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
         ios.position="left">
     </ActionItem>
-    <Label class="action-bar-title" text="Perfil"></Label>
+    <Label class="action-bar-title" text="Mi perfil"></Label>
 </ActionBar>
 
 <!--
@@ -24,7 +24,7 @@ it shouldn't have any other siblings other than the <ActionBar> component.
     Use the tkDrawerContent directive to display the content of the app drawer on this page.
     -->
     <StackLayout tkDrawerContent>
-        <MyDrawer [selectedPage]="'Featured'"></MyDrawer>
+        <MyDrawer [selectedPage]="'Mi perfil'"></MyDrawer>
     </StackLayout>
 
 

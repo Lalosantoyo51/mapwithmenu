@@ -6,8 +6,9 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 
 import { NSModuleFactoryLoader } from "nativescript-angular/router";
-import { AuthService } from "./services/auth.services";
+import { AuthService } from "./services/auth.service";
 import { DropDownModule } from "nativescript-drop-down/angular";
+import { AuthGuard } from "./guards/auth.guard";
 @NgModule({
     bootstrap: [
         AppComponent
@@ -24,7 +25,12 @@ import { DropDownModule } from "nativescript-drop-down/angular";
         AppComponent
     ],
     providers: [
-        AuthService
+        AuthService,
+        AuthGuard,
+        { 
+            provide: NgModuleFactoryLoader, 
+            useClass: NSModuleFactoryLoader 
+        }
    
     ],
     schemas: [

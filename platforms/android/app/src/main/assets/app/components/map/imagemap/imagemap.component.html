@@ -9,7 +9,7 @@
     <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
         ios.position="left">
     </ActionItem>
-    <Label class="action-bar-title" text="Home"></Label>
+    <Label class="action-bar-title" text="Mapa"></Label>
 </ActionBar>
 
 <!--
@@ -24,13 +24,23 @@ it shouldn't have any other siblings other than the <ActionBar> component.
     Use the tkDrawerContent directive to display the content of the app drawer on this page.
     -->
     <StackLayout tkDrawerContent>
-        <MyDrawer [selectedPage]="'Home'"></MyDrawer>
+        <MyDrawer [selectedPage]="'Mapa'"></MyDrawer>
     </StackLayout>
     
     <!--
     Use the tkMainContent directive to display the content of the page when you have an app drawer.
     -->
     <GridLayout class="page page-content" tkMainContent>
-        <label text="asdasdasd"></label>
+            <StackLayout  class="title ">
+                    <StackLayout  >
+                            <label  class="name" horizontalAlignment="center" verticalAlignment="center" text="Mapa de la UUA"></label>
+                </StackLayout>
+                   <GridLayout class="img" >
+                        <ScrollView>
+                             <Image src="http://cursos.uaa.mx/images/mapa1.jpg"
+                              stretch="none" class="img-rounded p-l-15 p-r-15 p-t-15"></Image>  
+                              </ScrollView>
+                        </GridLayout>
+            </StackLayout>
     </GridLayout>
 </RadSideDrawer>

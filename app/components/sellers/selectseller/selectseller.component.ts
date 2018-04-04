@@ -50,6 +50,17 @@ export class SelectsellerComponent  {
     public changeStyles() {
         this.cssClass = "changed-styles";
     }
+    constructor(private router : RouterExtensions) {
+   
+    }
+    previous(){
+        this.router.navigate(['/sellers/selectproducts']);
+         
+    }
+    @ViewChild("drawer") drawerComponent: RadSideDrawerComponent;
+    onDrawerButtonTap(): void {
+        this.drawerComponent.sideDrawer.showDrawer();
+    }
    
    
 }

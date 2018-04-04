@@ -8,21 +8,21 @@ Feel free to customize layouts and components to change how your app drawer look
             <Label class="sidedrawer-header-image fa" text="&#xf2bd;"></Label>
         </StackLayout>
         <StackLayout class="sidedrawer-user-info" col="1">
-            <Label class="sidedrawer-header-brand" text="user.customer.names + ' ' + user.customer.last_name" ></Label>
-            <Label class="footnote" text="user.phone"></Label>
+            <Label class="sidedrawer-header-brand" [text]="user.customer.names + ' ' + user.customer.last_name" ></Label>
+            <Label class="footnote" [text]="user.phone"></Label>
         </StackLayout>
     </GridLayout>
     <StackLayout row="1" class="hr-light"></StackLayout>
     <ScrollView row="2">
             <StackLayout class="hr-light"></StackLayout>
         <StackLayout class="sidedrawer-content">
-            <MyDrawerItem title="Pedidos" route="/home" icon="&#xf007;" [isSelected]="isPageSelected('Home')"></MyDrawerItem>
-            <MyDrawerItem title="Mensajes" route="/browse" icon="&#xf075;" [isSelected]="isPageSelected('Browse')"></MyDrawerItem>
-            <MyDrawerItem title="Mapa" route="/search" icon="&#xf007;" [isSelected]="isPageSelected('Search')"></MyDrawerItem>
-            <MyDrawerItem title="Intercabio de Mercancia" route="/featured" icon="&#xf007;" [isSelected]="isPageSelected('Featured')"></MyDrawerItem>
-            <MyDrawerItem title="Comer" route="/settings"icon="&#xf129;" [isSelected]="isPageSelected('Settings')"></MyDrawerItem>
-            <MyDrawerItem title="Mi perfil" route="/settings" icon="&#xf007;" [isSelected]="isPageSelected('Settings')"></MyDrawerItem>
-            <MyDrawerItem title="Aplicación" route="/settings" icon="&#xf129;" [isSelected]="isPageSelected('Settings')"></MyDrawerItem>
+            <MyDrawerItem title="Pedidos" route="/orders/orders" icon="&#xf007;" [isSelected]="isPageSelected('Inicio')"></MyDrawerItem>
+            <MyDrawerItem title="Mensajes" route="/chat" icon="&#xf075;" [isSelected]="isPageSelected('Mensajes')"></MyDrawerItem>
+            <MyDrawerItem title="Mapa" route="/map/map" icon="&#xf007;" [isSelected]="isPageSelected('Mapa')"></MyDrawerItem>
+            <MyDrawerItem title="Intercabio de Mercancia" route="/sellers/selectproducts" icon="&#xf007;" [isSelected]="isPageSelected('Intercambiar')"></MyDrawerItem>
+            <MyDrawerItem title="Comer" route="/sellers/eat"icon="&#xf129;" [isSelected]="isPageSelected('Comer')"></MyDrawerItem>
+            <MyDrawerItem title="Mi perfil" route="/profile" icon="&#xf007;" [isSelected]="isPageSelected('Mi perfil')"></MyDrawerItem>
+            <MyDrawerItem title="Aplicación" route="/about" icon="&#xf129;" [isSelected]="isPageSelected('Aplicación')"></MyDrawerItem>
             <GridLayout columns="auto, *" class="sidedrawer-list-item" (tap)="logOut()">
                     <Label col="0" text="&#xf011;" class="fa"></Label>
                     <Label col="1" text="Cerrar sesión" class="p-r-10"></Label>
@@ -35,3 +35,4 @@ Feel free to customize layouts and components to change how your app drawer look
 
 
 
+ 
