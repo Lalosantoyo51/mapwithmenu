@@ -13,8 +13,6 @@ const routes: Routes = [
     { path: "profile", canActivate: [AuthGuard],loadChildren: "./components/profile/profile.module#ProfileModule" },
     { path: "map", loadChildren: "./components/map/map.module#MapModule" },
     { path: "chat", loadChildren: "./components/chat/chat.module#ChatModule" },
-
-
 ];
 
 @NgModule({

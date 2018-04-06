@@ -1,4 +1,10 @@
 import { Component, Input, OnInit } from "@angular/core";
+import { EventData, Observable } from 'data/observable';
+import { Page } from 'ui/page';
+import { getBoolean,setBoolean} from "application-settings";
+import { User } from "../../models/user.model";
+import { AuthService } from "../../services/auth.service";
+import { RouterExtensions } from "nativescript-angular/router";
 
 /* ***********************************************************
 * Keep data that is displayed in your app drawer in the MyDrawer component class.
@@ -10,25 +16,24 @@ import { Component, Input, OnInit } from "@angular/core";
     templateUrl: "./my-drawer.component.html",
     styleUrls: ["./my-drawer.component.scss"]
 })
-export class MyDrawerComponent implements OnInit {
-    /* ***********************************************************
-    * The "selectedPage" is a component input property.
-    * It is used to pass the current page title from the containing page component.
-    * You can check how it is used in the "isPageSelected" function below.
-    *************************************************************/
+export class MyDrawerComponent extends Observable {
+    @Input() mostrar:boolean;
     @Input() selectedPage: string;
 
-    ngOnInit(): void {
-        /* ***********************************************************
-        * Use the MyDrawerComponent "onInit" event handler to initialize the properties data values.
-        *************************************************************/
+    user;
+
+    constructor( private router : RouterExtensions, private authService:AuthService ) { 
+        super();
     }
 
-    /* ***********************************************************
-    * The "isPageSelected" function is bound to every navigation item on the <MyDrawerItem>.
-    * It is used to determine whether the item should have the "selected" class.
-    * The "selected" class changes the styles of the item, so that you know which page you are on.
-    *************************************************************/
+    async ngOnInit() {
+        this.user = await this.authService.user.toPromise();
+    }
+    
+    async logOut(){
+        this.authService.logOut();
+        this.router.navigate(['/auth/login'],{ clearHistory:true});
+    }
     isPageSelected(pageTitle: string): boolean {
         return pageTitle === this.selectedPage;
     }

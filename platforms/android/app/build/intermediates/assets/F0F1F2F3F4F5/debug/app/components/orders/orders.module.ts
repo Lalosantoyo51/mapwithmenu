@@ -6,6 +6,7 @@ import { SharedModule } from "../../shared/shared.module";
 
 import { QualifyComponent } from "./qualify/qualify.component";
 import { OrdersComponent } from "./orders/orders.component";
+import { SellComponent } from "./sell/sell.component";
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { OrdersComponent } from "./orders/orders.component";
     declarations: [
 
         QualifyComponent,
-        OrdersComponent
+        OrdersComponent,
+        SellComponent
     ],
     schemas: [
         NO_ERRORS_SCHEMA

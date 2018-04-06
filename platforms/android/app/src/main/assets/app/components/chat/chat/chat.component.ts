@@ -1,7 +1,8 @@
 import { Component, OnInit, ViewChild } from "@angular/core";
 import { DrawerTransitionBase, SlideInOnTopTransition } from "nativescript-pro-ui/sidedrawer";
 import { RadSideDrawerComponent } from "nativescript-pro-ui/sidedrawer/angular";
-
+import {ActivatedRoute} from "@angular/router"
+import { Label } from "ui/label";
 @Component({
     selector: "chat",
     moduleId: module.id,
@@ -10,6 +11,24 @@ import { RadSideDrawerComponent } from "nativescript-pro-ui/sidedrawer/angular";
 
 })
 export class ChatComponent implements OnInit {
+    public messages;
+    public message: string;
+    public user:string;
+    public user2:string;
+    public result:string;
+    constructor( private route: ActivatedRoute) { 
+     
+        if(this.result){
+            this.route.queryParams.subscribe(params =>{
+                this.result= params["user"];
+            })
+        }else{
+            this.route.queryParams.subscribe(params =>{
+                this.result=params["user2"];
+            })
+        }
+
+    }
     /* ***********************************************************
     * Use the @ViewChild decorator to get a reference to the drawer component.
     * It is used in the "onDrawerButtonTap" function below to manipulate the drawer.
@@ -35,6 +54,9 @@ export class ChatComponent implements OnInit {
     *************************************************************/
     onDrawerButtonTap(): void {
         this.drawerComponent.sideDrawer.showDrawer();
+    }
+    chat(){
+        console.log(this.message)
     }
     
 }

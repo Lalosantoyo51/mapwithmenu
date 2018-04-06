@@ -5,12 +5,15 @@ import { SharedModule } from "../../shared/shared.module";
 import { ChatRoutingModule } from "./chat-routing.module";
 import { ChatComponent } from "./chat/chat.component";
 import { ListchatComponent } from "./listchat/listchat.component";
+import { NativeScriptFormsModule } from "nativescript-angular";
 
 @NgModule({
     imports: [
         NativeScriptCommonModule,
         ChatRoutingModule,
-        SharedModule
+        SharedModule,
+        NativeScriptFormsModule,
+        NativeScriptCommonModule,
     ],
     declarations: [
         ChatComponent,
