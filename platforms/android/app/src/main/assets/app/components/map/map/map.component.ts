@@ -2,12 +2,13 @@ import { DrawerTransitionBase, SlideInOnTopTransition } from "nativescript-pro-u
 import { RadSideDrawerComponent } from "nativescript-pro-ui/sidedrawer/angular";
 import { Component, ElementRef, ViewChild,OnInit } from "@angular/core";
 import {registerElement} from "nativescript-angular/element-registry";
-import { MapView, Marker, Position } from 'nativescript-google-maps-sdk';
+import { MapView, Marker, Position, Polyline } from 'nativescript-google-maps-sdk';
 import { Location, getCurrentLocation, isEnabled, distance, enableLocationRequest } from "nativescript-geolocation";
 // << import-geolocation-plugin
 import { SegmentedBarItem } from "ui/segmented-bar";
 import { Accuracy } from "ui/enums";
 import { RouterExtensions } from "nativescript-angular/router";
+import { Color } from "tns-core-modules/color/color";
 registerElement('MapView', () => MapView);
 
 @Component({
@@ -20,7 +21,6 @@ registerElement('MapView', () => MapView);
   
 })
 export class MapComponent implements OnInit {
-   
     latitude =  21.8857199;
     longitude = -102.36134;
     zoom = 8;
@@ -35,12 +35,7 @@ export class MapComponent implements OnInit {
 
     //Map events
     onMapReady(event) {
-        
-        console.log('Map Ready');
-
         this.mapView = event.object;
-
-        console.log("Setting a marker...");
         var marker = new Marker;
         marker.position = Position.positionFromLatLng(21.88709632015833,-102.25194454193115);
         marker.title = "Sydney";
@@ -50,17 +45,16 @@ export class MapComponent implements OnInit {
         marker.draggable=true;
         var gMap = event.gMap;
         gMap.setMyLocationEnabled(true);
-        isEnabled().then(function (isLocationEnabled) {
-            if (isLocationEnabled = true) {
-                console.log("activo")
-            }if(isLocationEnabled= false){
-                console.log("apagado")
-            }
-         
-        });
+        console.log(gMap.setMyLocationEnabled)
+        
+       
+
+
+  
+    
   
     }
-    hola(onCameraChanged){
+    addmarket(onCameraChanged,location){
         var marker = new Marker;
         marker.position = Position.positionFromLatLng(onCameraChanged.latitude,onCameraChanged.longitude);
         marker.title = "Sydney";
@@ -68,6 +62,8 @@ export class MapComponent implements OnInit {
         marker.userData = {index: 1};
         this.mapView.addMarker(marker);
         marker.draggable=true;
+        console.log(location.latitude)
+        
     }
  
  
@@ -80,11 +76,7 @@ export class MapComponent implements OnInit {
         //marker.userData = {index: 1};
         //this.mapView.addMarker(marker);
         //marker.draggable=true;
-
-   
-       console.log("Coordinate Tapped, Lat: " + args.position.latitude + ", Lon: " + args.position.longitude, args);   
-        
-        
+         
     }
 
     onMarkerEvent(args) {

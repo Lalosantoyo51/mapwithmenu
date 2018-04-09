@@ -1,0 +1,71 @@
+// Custom common variables
+@import '../../app-variables';
+
+// Drawer navigation custom styles
+$sidedrawer-header-image-size: 60;
+$sidedrawer-header-image-offset-top: 60;
+$sidedrawer-header-image-offset-bottom: 5;
+
+.sidedrawer {
+    &.sidedrawer-left {
+        .sidedrawer-header-image {
+            color: $background-dark;
+            height: $sidedrawer-header-image-size;
+            width: $sidedrawer-header-image-size;
+            font-size: $sidedrawer-header-image-size;
+        }
+
+        .footnote {
+            margin-top: 10;
+            color: rgba($item-color-android, 0.5);
+        }
+
+    }
+
+    .sidedrawer-header {
+        background-color: $background-light;
+        margin: 0;
+        margin-top: $sidedrawer-header-image-offset-top;
+
+        .sidedrawer-header-brand {
+            color: $item-color-android;
+        }
+    }
+
+    .sidedrawer-user-info {
+        margin-left: 20;
+    }
+
+    .hr-light {
+        background-color: $warning-light; 
+        margin-left: 20;
+        margin-right: 20;
+    }
+
+    .sidedrawer-content {
+        background-color: $side-drawer-background;
+    }
+}
+
+$sidedrawer-list-item-offset-left: 15;
+$sidedrawer-list-icon-offset: 10;
+$sidedrawer-list-icon-size: 20;
+
+.sidedrawer-list-item {
+    padding-left: $sidedrawer-list-item-offset-left;
+    Label {
+        vertical-align: center;
+        color: $item-color-android;
+    }
+    .fa {
+        width: $sidedrawer-list-icon-size;
+        margin-right: $sidedrawer-list-icon-offset;
+        color: $warning-light; 
+    }
+    &.selected {
+        background-color: $item-active-background;
+        Label {
+            color: $item-active-color;
+        }
+    }
+}
