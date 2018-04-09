@@ -35,6 +35,7 @@ export class MapComponent implements OnInit {
 
     //Map events
     onMapReady(event) {
+        
         console.log('Map Ready');
 
         this.mapView = event.object;
@@ -47,8 +48,17 @@ export class MapComponent implements OnInit {
         marker.userData = {index: 1};
         this.mapView.addMarker(marker);
         marker.draggable=true;
-        
-      
+        var gMap = event.gMap;
+        gMap.setMyLocationEnabled(true);
+        isEnabled().then(function (isLocationEnabled) {
+            if (isLocationEnabled = true) {
+                console.log("activo")
+            }if(isLocationEnabled= false){
+                console.log("apagado")
+            }
+         
+        });
+  
     }
     hola(onCameraChanged){
         var marker = new Marker;
@@ -58,11 +68,8 @@ export class MapComponent implements OnInit {
         marker.userData = {index: 1};
         this.mapView.addMarker(marker);
         marker.draggable=true;
-       
-  
-
-
     }
+ 
  
 
     onCoordinateTapped(args) {
