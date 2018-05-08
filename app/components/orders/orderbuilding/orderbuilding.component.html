@@ -1,0 +1,43 @@
+<StackLayout>
+        <CardView class="cardStyle" margin="10" elevation="30" radius="1" >
+            <GridLayout  rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto">
+                <StackLayout class="placesainfo" row="0" col="1">
+                    <GridLayout columns="auto, *" class="location">
+                        <Label class="myplaces" row="0" col="0" text="Pedido para "></Label>
+                        <Label class="myplaces"  row="0" col="1" text=" Julio García"></Label>                                                 
+                    </GridLayout>
+                    <label text="2 Burritos de verde"></label>
+                    <label text="4 Burritos de rojo"></label>
+                    <label text="1 Burritos de verde"></label>
+                    <GridLayout columns="auto, *" class="location">
+                        <Label col="0" text="&#xf041;" class="fa"></Label>
+                        <Label col="1" text="Av. Universidad #940, Cd. Universitaria, C.P. 20131" class="p-r-10"textWrap="true"></Label>
+                    </GridLayout>
+                </StackLayout> 
+            </GridLayout>
+        </CardView>     
+    </StackLayout>  
+    <StackLayout *ngFor="let orden of ordenes">
+            <CardView class="cardStyle" margin="10" elevation="10" radius="3" >
+                    <GridLayout  rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto">
+                    <StackLayout col="1" row="1" class="placesainfo">
+                            <Label class="myplaces" row="0" col="0" [text]="orden.customer"></Label>
+                        <Label text="Detalles de tu pedido" class="title"></Label>
+                        <StackLayout *ngFor= "let product of orden.products"> 
+                                <label [text]="product.quantity +' '+ product.name"></label>
+                        </StackLayout>
+                        <GridLayout columns="auto, *" class="location">
+                            <Label col="0" text="&#xf041;" class="fa"></Label>
+                            <Label col="1" [text]="orden.building +', '+ orden.office" class="p-r-10"></Label>
+                        </GridLayout>
+                    </StackLayout>
+                    <GridLayout  rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" col="2" row="1">
+                            <Button col="1" text="&#xf206;"class="fa fa-trash-o" style="font-size:24px;"(tap)="deletemyplace(name.id)" height="60" width="55"></Button>
+                            <Button  *ngIf="orden.payment_type =='Cash'" col="2" text="&#xf00d;"class="fa fa-trash-o" style="font-size:24px;"(tap)="deletemyplace(name.id)" height="60" width="55"></Button>
+                           
+                    </GridLayout>
+                    </GridLayout>
+            </CardView>
+        </StackLayout>
+        <button text="actualizar" (tap)="update()"></button>
+                    

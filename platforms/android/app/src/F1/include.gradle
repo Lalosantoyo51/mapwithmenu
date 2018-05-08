@@ -1,21 +1,13 @@
-allprojects {
-    repositories {
-        jcenter()
-        maven {
-            url "https://maven.google.com"
-        }
-    }
-}
+/* Include.gradle configuration: http://docs.nativescript.org/plugins/plugins#includegradle-specification */
 
 android {
 	productFlavors {
-		"nativescript-geolocation" {
-			dimension "nativescript-geolocation"
+		"nativescript-facebook" {
+			dimension "nativescript-facebook"
 		}
 	}
 }
 
 dependencies {
-	def googlePlayServicesVersion = project.hasProperty('googlePlayServicesVersion') ? project.googlePlayServicesVersion : "11.4.0"
-	compile "com.google.android.gms:play-services-location:$googlePlayServicesVersion"
+	compile "com.facebook.android:facebook-android-sdk:4.22.0"
 }

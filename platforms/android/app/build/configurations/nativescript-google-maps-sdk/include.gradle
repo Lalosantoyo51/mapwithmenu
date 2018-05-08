@@ -1,6 +1,6 @@
 android { 
 	productFlavors {
-		"F2" {
+		"F4" {
 			dimension "nativescriptgooglemapssdk"
 		}
 	}

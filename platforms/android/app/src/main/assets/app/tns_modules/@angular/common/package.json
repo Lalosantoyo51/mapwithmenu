@@ -1,28 +1,29 @@
 {
-  "_from": "@angular/common@~5.2.0",
-  "_id": "@angular/common@5.2.6",
+  "_from": "@angular/common@5.2.9",
+  "_id": "@angular/common@5.2.9",
   "_inBundle": false,
-  "_integrity": "sha512-gJrUKW9rDeVGP0pBNGDEEP/U+vBtgIVd1+52X5mc+dNFuUQdQ2kNTK5+fbDfwVstEWE86gloHlG2GS2Ga94R3Q==",
+  "_integrity": "sha512-g2hPcI0fnT4TV+Fd+1IohjuqBxPvxwyH9IzTn8PkU9X2M+F6cHCUvHxL1sWI2sF8pYcaHzVjq9WClym10X36Lg==",
   "_location": "/@angular/common",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "version",
     "registry": true,
-    "raw": "@angular/common@~5.2.0",
+    "raw": "@angular/common@5.2.9",
     "name": "@angular/common",
     "escapedName": "@angular%2fcommon",
     "scope": "@angular",
-    "rawSpec": "~5.2.0",
+    "rawSpec": "5.2.9",
     "saveSpec": null,
-    "fetchSpec": "~5.2.0"
+    "fetchSpec": "5.2.9"
   },
   "_requiredBy": [
-    "/tns-template-drawer-navigation-ng"
+    "/",
+    "/nativescript-ngx-slides"
   ],
-  "_resolved": "https://registry.npmjs.org/@angular/common/-/common-5.2.6.tgz",
-  "_shasum": "0c6771739f1407eae0533e82c3ee42425badd489",
-  "_spec": "@angular/common@~5.2.0",
-  "_where": "C:\\Users\\Metarokusho\\Documents\\Distribuidor\\node_modules\\tns-template-drawer-navigation-ng",
+  "_resolved": "https://registry.npmjs.org/@angular/common/-/common-5.2.9.tgz",
+  "_shasum": "beb25d4434498abae56bd8dc2c01ade3f6c45e81",
+  "_spec": "@angular/common@5.2.9",
+  "_where": "/Users/desarrollo/Desktop/mapwithmenu",
   "author": {
     "name": "angular"
   },
@@ -43,12 +44,12 @@
   "name": "@angular/common",
   "peerDependencies": {
     "rxjs": "^5.5.0",
-    "@angular/core": "5.2.6"
+    "@angular/core": "5.2.9"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/angular/angular.git"
   },
   "typings": "./common.d.ts",
-  "version": "5.2.6"
+  "version": "5.2.9"
 }

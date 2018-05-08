@@ -5,8 +5,10 @@ import { OrdersRoutingModule } from "./orders-routing.module";
 import { SharedModule } from "../../shared/shared.module";
 
 import { QualifyComponent } from "./qualify/qualify.component";
-import { OrdersComponent } from "./orders/orders.component";
+import { OrdersstreetComponent } from "./orderssteet/orders.component"
 import { SellComponent } from "./sell/sell.component";
+import { OrderComponent } from "./order/order.component";
+import { OrdersbuildingComponent } from "./orderbuilding/orderbuilding.component";
 
 
 @NgModule({
@@ -16,9 +18,10 @@ import { SellComponent } from "./sell/sell.component";
         OrdersRoutingModule
     ],
     declarations: [
-
+        OrderComponent,
         QualifyComponent,
-        OrdersComponent,
+        OrdersstreetComponent,
+        OrdersbuildingComponent,
         SellComponent
     ],
     schemas: [

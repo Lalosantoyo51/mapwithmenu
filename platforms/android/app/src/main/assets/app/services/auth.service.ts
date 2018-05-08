@@ -8,9 +8,9 @@ import { User } from "../models/user.model";
 export class AuthService {
     private GRANT_TYPE : string = 'password';
     private CLIENT_ID : number = 2;
-    private CLIENT_SECRET : string = '6DpcZr8bd6BeDQHcrf1DHylWzKwZksH92WKSsKOz';
+    private CLIENT_SECRET : string = '9mF2uNLqDBpMv3iHaFaQbCyIZgscIzgkcG4qkLgA';
     private SCOPE: string = '*';
-    private SERVER_URL : string = 'http://familiaburrera.tk/';
+    private SERVER_URL : string = 'http://192.168.0.113:8000/';
     public API_URL : string = this.SERVER_URL + 'api/v1/';
     private HTTP_AUTH_OPTIONS = {
         headers: new HttpHeaders({

@@ -1,11 +1,21 @@
-android { 
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
+    }
+}
+
+android {
 	productFlavors {
-		"nativescript-google-maps-utils" {
-			dimension "nativescriptgooglemapsutils"
+		"nativescript-geolocation" {
+			dimension "nativescript-geolocation"
 		}
 	}
 }
 
 dependencies {
-    compile 'com.google.maps.android:android-maps-utils:0.5'
+	def googlePlayServicesVersion = project.hasProperty('googlePlayServicesVersion') ? project.googlePlayServicesVersion : "11.4.0"
+	compile "com.google.android.gms:play-services-location:$googlePlayServicesVersion"
 }

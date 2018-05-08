@@ -30,11 +30,13 @@ export class MapComponent implements OnInit {
     mapView: MapView;
     public startpointLongitude: number = 42.696552;
     public startpointLatitude: number = 23.32601;
+    public gMap;
 
     lastCamera: String;
 
     //Map events
     onMapReady(event) {
+        console.log('Map Ready');
         this.mapView = event.object;
         var marker = new Marker;
         marker.position = Position.positionFromLatLng(21.88709632015833,-102.25194454193115);
@@ -43,16 +45,9 @@ export class MapComponent implements OnInit {
         marker.userData = {index: 1};
         this.mapView.addMarker(marker);
         marker.draggable=true;
-        var gMap = event.gMap;
-        gMap.setMyLocationEnabled(true);
-        console.log(gMap.setMyLocationEnabled)
-        
+         this.gMap = event.gMap;
+        this.gMap.setMyLocationEnabled(true);
        
-
-
-  
-    
-  
     }
     addmarket(onCameraChanged,location){
         var marker = new Marker;
@@ -63,6 +58,7 @@ export class MapComponent implements OnInit {
         this.mapView.addMarker(marker);
         marker.draggable=true;
         console.log(location.latitude)
+    
         
     }
  

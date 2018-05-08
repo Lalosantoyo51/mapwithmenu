@@ -9,6 +9,8 @@ import { NSModuleFactoryLoader } from "nativescript-angular/router";
 import { AuthService } from "./services/auth.service";
 import { DropDownModule } from "nativescript-drop-down/angular";
 import { AuthGuard } from "./guards/auth.guard";
+import { NativeScriptFormsModule } from "nativescript-angular";
+
 @NgModule({
     bootstrap: [
         AppComponent
@@ -17,8 +19,8 @@ import { AuthGuard } from "./guards/auth.guard";
         NativeScriptModule,
         AppRoutingModule,
         NativeScriptHttpClientModule,
-        DropDownModule
-        
+        DropDownModule,
+        NativeScriptFormsModule,
        
     ],
     declarations: [

@@ -4,7 +4,7 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { AuthGuard } from "./guards/auth.guard";
 
 const routes: Routes = [
-    { path: "", redirectTo: "chat/listchat", pathMatch: "full" },
+    { path: "", redirectTo: "orders/order", pathMatch: "full" },
     { path: "orders",loadChildren: "./components/orders/orders.module#OrdersModule" },    
     { path: "auth", loadChildren: "./components/auth/auth.module#AuthModule" },
     { path: "errors", loadChildren: "./components/errors/errors.module#ErrorsModule" },

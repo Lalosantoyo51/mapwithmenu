@@ -1,11 +1,12 @@
-android {
+android { 
 	productFlavors {
-		"nativescript-image-zoom" {
-			dimension "nativescript-image-zoom"
+		"nativescript-google-maps-sdk" {
+			dimension "nativescriptgooglemapssdk"
 		}
 	}
 }
 
 dependencies {
-    compile 'com.davemorrissey.labs:subsampling-scale-image-view:3.9.0'
+	def googlePlayServicesVersion = project.hasProperty('googlePlayServicesVersion') ? project.googlePlayServicesVersion : '+'
+	compile "com.google.android.gms:play-services-maps:$googlePlayServicesVersion"
 }

@@ -1,0 +1,23 @@
+<StackLayout>
+    <CardView class="cardStyle" margin="10" elevation="30" radius="1" >
+        <GridLayout  rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto">
+            <StackLayout class="placesainfo" row="0" col="1">
+                <GridLayout columns="auto, *" class="location">
+                    <Label class="myplaces" row="0" col="0" text="Pedido para "></Label>
+                    <Label class="myplaces"  row="0" col="1" text=" Julio García"></Label>                                                 
+                </GridLayout>
+                <label text="2 Burritos de verde"></label>
+                <label text="4 Burritos de rojo"></label>
+                <label text="1 Burritos de verde"></label>
+                <GridLayout columns="auto, *" class="location">
+                    <Label col="0" text="&#xf041;" class="fa"></Label>
+                    <Label col="1" text="Av. Universidad #940, Cd. Universitaria, C.P. 20131" class="p-r-10"textWrap="true"></Label>
+                </GridLayout>
+            </StackLayout> 
+            <StackLayout class="conteinerimg" row="0" col="2" >
+                <Button  text="&#xf014;"class="fa fa-trash-o" style="font-size:48px;"(tap)="deletemyplace(name.id)"></Button>
+            </StackLayout>
+        </GridLayout>
+    </CardView>     
+</StackLayout>    
+                     

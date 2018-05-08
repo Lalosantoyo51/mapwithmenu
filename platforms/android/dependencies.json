@@ -4,12 +4,24 @@
         "directory": "../../node_modules/nativescript-angular"
     },
     {
+        "name": "nativescript-cardview",
+        "directory": "../../node_modules/nativescript-cardview"
+    },
+    {
         "name": "nativescript-drop-down",
         "directory": "../../node_modules/nativescript-drop-down"
     },
     {
+        "name": "nativescript-facebook",
+        "directory": "../../node_modules/nativescript-facebook"
+    },
+    {
         "name": "nativescript-feedback",
         "directory": "../../node_modules/nativescript-feedback"
+    },
+    {
+        "name": "nativescript-filter-select",
+        "directory": "../../node_modules/nativescript-filter-select"
     },
     {
         "name": "nativescript-geolocation",
@@ -20,16 +32,16 @@
         "directory": "../../node_modules/nativescript-google-maps-sdk"
     },
     {
-        "name": "nativescript-google-maps-utils",
-        "directory": "../../node_modules/nativescript-google-maps-utils"
-    },
-    {
-        "name": "nativescript-image-zoom",
-        "directory": "../../node_modules/nativescript-image-zoom"
+        "name": "nativescript-iqkeyboardmanager",
+        "directory": "../../node_modules/nativescript-iqkeyboardmanager"
     },
     {
         "name": "nativescript-loading-indicator",
         "directory": "../../node_modules/nativescript-loading-indicator"
+    },
+    {
+        "name": "nativescript-modal-datetimepicker",
+        "directory": "../../node_modules/nativescript-modal-datetimepicker"
     },
     {
         "name": "nativescript-pro-ui",
