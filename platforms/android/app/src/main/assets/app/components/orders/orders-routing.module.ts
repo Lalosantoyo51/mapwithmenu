@@ -6,6 +6,7 @@ import { OrdersstreetComponent } from "./orderssteet/orders.component";
 import { SellComponent } from "./sell/sell.component";
 import { OrderComponent } from "./order/order.component";
 import { OrdersbuildingComponent } from "./orderbuilding/orderbuilding.component";
+import { Canceled_orders } from "./canceled_orders/canceled_orders.component";
 
 
 
@@ -14,7 +15,8 @@ const routes: Routes = [
     { path: "qualify", component: QualifyComponent },
     { path: "ordersstreet", component: OrdersstreetComponent },
     { path: "sell", component: SellComponent },
-    { path: "ordersbuilding", component:OrdersbuildingComponent}
+    { path: "ordersbuilding", component:OrdersbuildingComponent},
+    { path: "canceled_orders",component:Canceled_orders}
 
     
 

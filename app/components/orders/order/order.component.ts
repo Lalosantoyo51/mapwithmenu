@@ -5,6 +5,7 @@ import { ActivatedRoute, Router, NavigationExtras } from "@angular/router";
 import {MyHttpGetService }from "../../../get.services/get.services";
 import { User } from "../../../models/user.model";
 import { RouterExtensions } from "nativescript-angular";
+import { UserLocationService } from "../../../services/conex/userlocation.service";
 
 @Component({
     selector: "ns-order",
@@ -28,8 +29,8 @@ export class OrderComponent implements OnInit {
     public place_id:number;
     user;
     public isItemVisible: boolean = true;
-    public nsorder: boolean;
-    public nsmessage:boolean;
+    public nsordersbuilding: boolean;
+    public nsordersstreet:boolean;
     public name ;
     public Products: any[];
     public purchases :any[];
@@ -39,7 +40,7 @@ export class OrderComponent implements OnInit {
     public orders;
     public date;
     
-    constructor(private route : RouterExtensions,private myService: MyHttpGetService,private router:Router) { 
+    constructor(private route : RouterExtensions,private myService: MyHttpGetService,private router:Router, private userlocation:UserLocationService) { 
     }
 
     /* ***********************************************************
@@ -55,6 +56,39 @@ export class OrderComponent implements OnInit {
     *************************************************************/
     async ngOnInit() {
         this._sideDrawerTransition = new SlideInOnTopTransition();
+        //post latitude and longitude
+        this.userlocation.Mypostion({
+            latitude:this.latitude,
+            longitude:this.longitude
+        }).subscribe((profile)=>{
+            //console.log(JSON.stringify(profile));
+            this.locations = profile["Zone"];
+            this.location = [];
+           
+            //console.log(JSON.stringify(this.locations));
+            console.log(this.locations.length)
+
+            for (let i = 0; i < this.locations.length; i++) {
+                this.location.push(this.locations[i]['type']);
+                this.place_id=this.locations[i]['id'];
+                console.log("funciona el type")
+                console.log(JSON.stringify(this.locations[i]['type']))
+                console.log(" funciona el id")
+                console.log(JSON.stringify(this.locations[i]['id']))
+                if(this.location =='Building'){
+                    this.nsordersbuilding = true
+                    this.nsordersstreet = false
+                }else if(this.location =='Street'){
+                    this.nsordersstreet = true;
+                    this.nsordersbuilding = false
+                }
+            }   
+        },(error)=>{
+            console.log(JSON.stringify(error));
+            
+        });
+       
+
     }
     private onGetDataError(error: Response | any) {
         const body = error.json() || "";

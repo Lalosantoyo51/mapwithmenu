@@ -9,6 +9,7 @@ import { SegmentedBarItem } from "ui/segmented-bar";
 import { Accuracy } from "ui/enums";
 import { RouterExtensions } from "nativescript-angular/router";
 import { Color } from "tns-core-modules/color/color";
+import { MyHttpGetService } from "../../../get.services/get.services";
 registerElement('MapView', () => MapView);
 
 @Component({
@@ -16,11 +17,18 @@ registerElement('MapView', () => MapView);
     moduleId: module.id,
     templateUrl: "./map.component.html",
     styleUrls: ['./map.css'],
+    providers: [MyHttpGetService]
    
    
   
 })
 export class MapComponent implements OnInit {
+    public places;
+    public setmarket;
+    public customer;
+    public lat;
+    public log;
+    public address;
     latitude =  21.8857199;
     longitude = -102.36134;
     zoom = 8;
@@ -33,31 +41,21 @@ export class MapComponent implements OnInit {
     public gMap;
 
     lastCamera: String;
+    constructor(private myService: MyHttpGetService){}
 
     //Map events
     onMapReady(event) {
+        this.getplaces();
         console.log('Map Ready');
+        console.log(this.lat)
         this.mapView = event.object;
         var marker = new Marker;
-        marker.position = Position.positionFromLatLng(21.88709632015833,-102.25194454193115);
-        marker.title = "Sydney";
-        marker.snippet = "Australia";
-        marker.userData = {index: 1};
-        this.mapView.addMarker(marker);
-        marker.draggable=true;
          this.gMap = event.gMap;
         this.gMap.setMyLocationEnabled(true);
        
     }
     addmarket(onCameraChanged,location){
-        var marker = new Marker;
-        marker.position = Position.positionFromLatLng(onCameraChanged.latitude,onCameraChanged.longitude);
-        marker.title = "Sydney";
-        marker.snippet = "Australia";
-        marker.userData = {index: 1};
-        this.mapView.addMarker(marker);
-        marker.draggable=true;
-        console.log(location.latitude)
+this.getplaces
     
         
     }
@@ -99,6 +97,7 @@ export class MapComponent implements OnInit {
     *************************************************************/
     ngOnInit(): void {
         this._sideDrawerTransition = new SlideInOnTopTransition();
+       
         
     }
 
@@ -112,5 +111,42 @@ export class MapComponent implements OnInit {
     *************************************************************/
     onDrawerButtonTap(): void {
         this.drawerComponent.sideDrawer.showDrawer();
+    }
+    getplaces(){
+        this.myService.getData('map/seller')
+        .subscribe((data) => {
+            console.log("informacion")
+            this.places = data['places'];
+            this.setmarket = [];
+            //console.log(JSON.stringify(this.places))
+           
+             for (let i = 0; i < this.places.length; i++) {
+                console.log("cordenadas de los clientes")
+                this.lat  =this.places[i]["latitude"];
+                this.log = this.places[i]["longitude"]
+                this.customer = this.places[i]["customer"]["names"];
+                this.address = this.places[i]["address"];
+                var marker = new Marker;
+                marker.position = Position.positionFromLatLng(this.lat,this.log);
+                marker.title = this.customer;
+                marker.snippet = this.address;
+                marker.userData = {index: 1};
+                this.mapView.addMarker(marker);
+                marker.draggable=true;
+                console.log(JSON.stringify(this.lat))
+                console.log(JSON.stringify(this.log))
+                console.log(JSON.stringify(this.customer))
+
+
+            }
+        
+        }, (error) => {
+            this.onGetDataError(error);
+        });
+    }
+    private onGetDataError(error: Response | any) {
+        const body = error.json() || "";
+        const err = body.error || JSON.stringify(body);
+        console.log("onGetDataError: " + err);
     }
 }

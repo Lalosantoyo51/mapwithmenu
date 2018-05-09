@@ -4,6 +4,7 @@ import { RadSideDrawerComponent } from "nativescript-pro-ui/sidedrawer/angular";
 import { Label } from "ui/label";
 import * as utils from "utils/utils";
 import { MyHttpGetService } from "../../../get.services/get.services";
+import { Router } from "@angular/router";
 @Component({
     selector: "ns-ordersbuilding",
     moduleId: module.id,
@@ -21,7 +22,7 @@ export class OrdersbuildingComponent implements OnInit {
     public orders;
     public building;
     @ViewChild("drawer") drawerComponent: RadSideDrawerComponent;
-    constructor(private myService: MyHttpGetService){}
+    constructor(private myService: MyHttpGetService, private router:Router){}
     ngOnInit(): void {
        this.getdata();
    
@@ -62,20 +63,24 @@ export class OrdersbuildingComponent implements OnInit {
                    let products=[];
                    for (let i = 0; i < this.detail_purchases.length; i++) {
                     console.log("detalles del compra")
+                    console.log(JSON.stringify("id de la compra"+ this.detail_purchases[i]["purchase_id"]))
                     console.log(JSON.stringify(this.detail_purchases[i]["quantity"] +" "+this.detail_purchases[i]["product"]["name"]));
                     products.push({
                         'name': this.detail_purchases[i]["product"]["name"],
                         'quantity': this.detail_purchases[i]["quantity"],
-                        }); '' 
+                        'purchase_id':'id de la compra'+ this.detail_purchases[i]["purchase_id"]
+                        
+                        }); 
                 }
                     this.ordenes.push({ 
                         'customer':"Pedido para: "+this.purchases[i]["customer"]["names"],
                         'created_at':this.purchases[i]["created_at"],
-                        'purchase_id': this.purchases[i]["id"],
+                        'id': this.purchases[i]["id"],
                         'products': products,
                         'building': this.purchases[i]["building"]["name"],
                         'office':this.purchases[i]["office"]["name"],
-                        'payment_type':this.purchases[i]["payment_type"]
+                        'payment_type':this.purchases[i]["payment_type"],
+                        
                     });
                 } 
                     //console.log("Ordenes: " +JSON.stringify(this.ordenes) )
@@ -87,5 +92,24 @@ export class OrdersbuildingComponent implements OnInit {
     update(){
         this.getdata();
 
+    }
+    canceled_orders(){
+        this.router.navigate(['/orders/canceled_orders']);
+    }
+    deliveries(ordenes){
+        console.log(ordenes)
+        
+            this.myService.deletedata('order/'+ordenes+'/deliveries')
+            .subscribe((deletedata) => {
+               console.log(JSON.stringify(deletedata))
+               },(error) => {
+               this.onGetDataError(error);
+           });
+
+           
+           setTimeout(() => {
+            this.getdata();
+        }, 63);
+        
     }
 }

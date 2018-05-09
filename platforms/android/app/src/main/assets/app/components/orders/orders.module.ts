@@ -9,15 +9,19 @@ import { OrdersstreetComponent } from "./orderssteet/orders.component"
 import { SellComponent } from "./sell/sell.component";
 import { OrderComponent } from "./order/order.component";
 import { OrdersbuildingComponent } from "./orderbuilding/orderbuilding.component";
+import { Canceled_orders } from "./canceled_orders/canceled_orders.component";
+import { NativeScriptFormsModule } from "nativescript-angular";
 
 
 @NgModule({
     imports: [
         NativeScriptCommonModule,
         SharedModule,
-        OrdersRoutingModule
+        OrdersRoutingModule,
+        NativeScriptFormsModule,
     ],
     declarations: [
+        Canceled_orders,
         OrderComponent,
         QualifyComponent,
         OrdersstreetComponent,

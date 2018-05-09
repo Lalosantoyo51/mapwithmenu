@@ -32,8 +32,13 @@
         -->
         <ScrollView class="page page-content" tkMainContent>
             <StackLayout class="layout">
-               <!-- <ns-ordersstreet></ns-ordersstreet>-->
-                <ns-ordersbuilding></ns-ordersbuilding>
+                 <StackLayout  [visibility]="nsordersstreet ? 'visible' : 'collapsed'">
+                    <ns-ordersstreet></ns-ordersstreet>
+                </StackLayout>
+               <StackLayout  [visibility]="nsordersbuilding ? 'visible' : 'collapsed'">
+                    <ns-ordersbuilding></ns-ordersbuilding>
+               </StackLayout>
+    
             </StackLayout>
         </ScrollView>
     </RadSideDrawer>
