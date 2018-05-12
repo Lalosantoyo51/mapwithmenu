@@ -38,82 +38,14 @@
                         <StackLayout>
                             <img row="0" src="~/assets/p1.png" height="200px">
                             <label  horizontalAlignment="center" verticalAlignment="center" text="Selecciona tus productos"></label>
-                            <SackLayout>
+                            <SackLayout *ngFor="let products of product" >
                                     <GridLayout class="container"   columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"  >
-                                            <Label class="h3 m-5" width="150" height="50" row="0" id="productss" text="burro de rojo"></Label>
+                                            <Label class="h3 m-5" width="150" height="50" row="0" id="productss" [text]="products.name"></Label>
                                             <Label width="20"  height="50" row="0" class="h3 m-15" col="2" text="0"(tap)="hola(name)"></Label>
                                             <button width="40"height="50"  row="0" class="la" col="1" text="+"  (tap)="suma(name)"></button>
                                             <button width="40" height="50"  row="0" class="la" col="3" text="-"  (tap)="resta()"></button>
                                     </GridLayout>  
-                             </SackLayout>
-                             <SackLayout>
-                                    <GridLayout class="container"   columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"  >
-                                            <Label class="h3 m-5" width="150" height="50" row="0" id="productss" text="burro de rojo"></Label>
-                                            <Label width="20"  height="50" row="0" class="h3 m-15" col="2" text="0"(tap)="hola(name)"></Label>
-                                            <button width="40"height="50"  row="0" class="la" col="1" text="+"  (tap)="suma(name)"></button>
-                                            <button width="40" height="50"  row="0" class="la" col="3" text="-"  (tap)="resta()"></button>
-                                    </GridLayout>  
-                             </SackLayout>
-                             <SackLayout>
-                                        <GridLayout class="container"   columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"  >
-                                                <Label class="h3 m-5" width="150" height="50" row="0" id="productss" text="burro de rojo"></Label>
-                                                <Label width="20"  height="50" row="0" class="h3 m-15" col="2" text="0"(tap)="hola(name)"></Label>
-                                                <button width="40"height="50"  row="0" class="la" col="1" text="+"  (tap)="suma(name)"></button>
-                                                <button width="40" height="50"  row="0" class="la" col="3" text="-"  (tap)="resta()"></button>
-                                        </GridLayout>  
-                                 </SackLayout>
-                            <SackLayout>
-                                    <GridLayout class="container"   columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"  >
-                                            <Label class="h3 m-5" width="150" height="50" row="0" id="productss" text="burro de rojo"></Label>
-                                            <Label width="20"  height="50" row="0" class="h3 m-15" col="2" text="0"(tap)="hola(name)"></Label>
-                                            <button width="40"height="50"  row="0" class="la" col="1" text="+"  (tap)="suma(name)"></button>
-                                            <button width="40" height="50"  row="0" class="la" col="3" text="-"  (tap)="resta()"></button>
-                                    </GridLayout>  
-                             </SackLayout>
-                             <SackLayout>
-                                        <GridLayout class="container"   columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"  >
-                                                <Label class="h3 m-5" width="150" height="50" row="0" id="productss" text="burro de rojo"></Label>
-                                                <Label width="20"  height="50" row="0" class="h3 m-15" col="2" text="0"(tap)="hola(name)"></Label>
-                                                <button width="40"height="50"  row="0" class="la" col="1" text="+"  (tap)="suma(name)"></button>
-                                                <button width="40" height="50"  row="0" class="la" col="3" text="-"  (tap)="resta()"></button>
-                                        </GridLayout>  
-                                 </SackLayout>
-                                 <SackLayout>
-                                        <GridLayout class="container"   columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"  >
-                                                <Label class="h3 m-5" width="150" height="50" row="0" id="productss" text="burro de rojo"></Label>
-                                                <Label width="20"  height="50" row="0" class="h3 m-15" col="2" text="0"(tap)="hola(name)"></Label>
-                                                <button width="40"height="50"  row="0" class="la" col="1" text="+"  (tap)="suma(name)"></button>
-                                                <button width="40" height="50"  row="0" class="la" col="3" text="-"  (tap)="resta()"></button>
-                                        </GridLayout>  
-                                 </SackLayout>
-                                 <SackLayout>
-                                        <GridLayout class="container"   columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"  >
-                                                <Label class="h3 m-5" width="150" height="50" row="0" id="productss" text="burro de rojo"></Label>
-                                                <Label width="20"  height="50" row="0" class="h3 m-15" col="2" text="0"(tap)="hola(name)"></Label>
-                                                <button width="40"height="50"  row="0" class="la" col="1" text="+"  (tap)="suma(name)"></button>
-                                                <button width="40" height="50"  row="0" class="la" col="3" text="-"  (tap)="resta()"></button>
-                                        </GridLayout>  
-                                 </SackLayout>
-
-                               
-                                <!-- <Label class="h3 m-5" width="150" height="50" row="3" text="Burro de bistec"></Label>
-                                <Label width="20"   height="50" row="3" class="h3 m-15" col="2" text="0" [text]="result2"></Label>
-                                <button width="40"height="50"  row="3" class="la" col="1" text="+" (tap)="suma2()"></button>
-                                <button width="40" height="50"  row="3" class="la" col="3" text="-"  (tap)="resta2()"></button>
-                        
-                                <Label class="h3 m-5" width="150" height="50" row="4" text="Burro de papas"></Label>
-                                <Label width="20"  height="50" row="4" class="h3 m-15" col="2" text="0"  [text]="result3"></Label>
-                                <button width="40" height="50"  row="4" class="la" col="1" text="+"(tap)="suma3()" ></button>
-                                <button width="40"  height="50"  row="4" class="la" col="3" text="-"  (tap)="resta3()"></button>
-                                
-                                
-                                 -->
-                        
-                            
-                           
-                                  
-                            
-                    
+                             </SackLayout>                    
                         <GridLayout  horizontalAlignment="center" verticalAlignment="center" class="m-15" columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto">
                                 <button  horizontalAlignment="center" verticalAlignment="center" class="btn" width="140"  height="50"  row="1" col="2"  (tap)="next()"  text=">"></button> 
                     

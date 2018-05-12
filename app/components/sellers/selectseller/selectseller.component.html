@@ -36,23 +36,23 @@
                 <label  horizontalAlignment="center" verticalAlignment="center"  class="h3 m-15"  text="Seleccionar un vendedor"></label>
     
                 <GridLayout  horizontalAlignment="center" verticalAlignment="center"  class="dropdown" borderRadius="5" horizontalAlignment="center" verticalAlignment="center">
-                                <DropDown #dd
-                                [class]="cssClass"
-                                [items]="items"
-                                [(ngModel)]="selectedIndex"
-                                hint="Seleccionar Vendedor"
-                                (selectedIndexChanged)="onchange($event)"
-                                (opened)="onopen()"
-                                (closed)="onclose()"
-                                row="0"
-                                colSpan="2"></DropDown>
+                    <DropDown #dd
+                    col="0"
+                      [class]="cssClass"
+                      [items]="seller"
+                      [(ngModel)]="numseller"                                              
+                      hint="Selecciona al vendedor"
+                      (selectedIndexChanged)="onchange($event)"
+                      row="1"
+                      colSpan="2">
+                    </DropDown>
                             </GridLayout>
                             
                 
             <GridLayout class="m-15" columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto">
                     <button class="btnn" width="150"  height="50"  row="1" col="0" (tap)="previous()"  text="<"></button>
-                    <label text="      " width="50"row="1" col="1"></label> 
-                    <button class="btnm" width="150"  height="50"  row="1" col="2"  (tap)="wizard3()"  text="Confirmar"></button> 
+
+                    <button class="btnm" width="150"  height="50"  row="1" col="2"  (tap)="confirmar()"  text="Confirmar"></button> 
         
             </GridLayout>
             

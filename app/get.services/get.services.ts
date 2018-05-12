@@ -4,17 +4,20 @@ import { HttpClient, HttpHeaders, HttpResponse } from "@angular/common/http";
 import "rxjs/add/operator/map";
 import "rxjs/add/operator/do";
 import "rxjs/add/operator/map";
+import { Seller } from "../interface/seller.model";
+import { AuthService } from "../services/auth.service";
+
 
 
 @Injectable()
 export class MyHttpGetService {
     private serverUrl = "http://192.168.0.113:8000/api/v1/";
 
-    constructor(private http: HttpClient) { }
+    constructor(private http: HttpClient,private authservice:AuthService) { }
 
     getData(uri) {
-        let headers = this.createRequestHeader();
-        return this.http.get(this.serverUrl + uri, { headers: headers })
+        let headers = this.authservice.HTTP_OPTIONS;
+        return this.http.get<Seller[]>(this.serverUrl + uri, headers )
             .map(res => res);
     }
     deletedata(uri){

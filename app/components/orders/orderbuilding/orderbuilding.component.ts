@@ -108,6 +108,7 @@ export class OrdersbuildingComponent implements OnInit {
 
            
            setTimeout(() => {
+            this.router.navigate (["orders/qualify"]);
             this.getdata();
         }, 63);
         

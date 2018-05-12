@@ -40,11 +40,19 @@ export class EatComponent  {
     public buildid;
     public oficcesid;
     public products_place;
+    //tipo building id 3
+    //public latitude ="21.876871" ;
+    //public longitude ="-102.262451";
+    //tipo street
     public latitude ="21.922501";
     public longitude ="-102.304532";
+    //tipo building con el id 1
+    //public latitude ="21.913840";
+    //public longitude ="-102.315723";
     ngOnInit(): void {
         //this.extractData2();
         console.log('productos de lugar tipo')
+        //get products type street
         this.placestreet.locationstreet({
             latitude:this.latitude,
             longitude:this.longitude
@@ -54,7 +62,8 @@ export class EatComponent  {
             //console.log(JSON.stringify(data))
             this.name = []
             for (let i = 0; i < this.Products.length; i++) {
-               // this.name.push(this.Products[i]["products"]['name']);
+                if(this.Products[i]["type"]=='Street'){
+                          // this.name.push(this.Products[i]["products"]['name']);
                 console.log(JSON.stringify(this.Products[i]["products_place"]));
                 this.products_place =  this.Products[i]["products_place"];
                 for(let i =0;i<this.products_place.length;i++){
@@ -66,7 +75,12 @@ export class EatComponent  {
                         'cantidad':this.result
                     });
                 }            
+            }else {
+                console.log("estas en tipo edificio te regresaremos pronto la mercancia")
             } 
+
+          }
+         
         },(error)=>{
             console.log(JSON.stringify(error));
             

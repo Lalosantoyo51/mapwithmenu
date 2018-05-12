@@ -11,6 +11,7 @@ import { NativeScriptFormsModule } from "nativescript-angular";
 import { AuthService2 } from "./services/conex/conex.service";
 import { UserLocationService}from "./services/conex/userlocation.service";
 import { Placestreet } from "./services/conex/locationstreet.service";
+import { ProductExchangeService } from "./services/conex/exchange.service";
 @NgModule({
     bootstrap: [
         AppComponent
@@ -27,6 +28,7 @@ import { Placestreet } from "./services/conex/locationstreet.service";
         AppComponent
     ],
     providers: [
+        ProductExchangeService,
         Placestreet,
         UserLocationService,
         AuthService2,

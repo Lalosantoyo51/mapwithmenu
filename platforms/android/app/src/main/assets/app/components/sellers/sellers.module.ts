@@ -10,6 +10,7 @@ import { SelectproductsComponent} from "./selectproducts/selectproducts.componen
 import { SelectsellerComponent } from "./selectseller/selectseller.component";
 import { SellersRoutingModule } from "./sellers-routing.module";
 import { EatComponent } from "./eat/eat.component";
+import { DropDownModule } from "nativescript-drop-down/angular";
 
 
 
@@ -23,6 +24,7 @@ registerElement ( " PreviousNextView " , ( ) => require ( " nativescript-iqkeybo
         SharedModule,
         NativeScriptFormsModule,
         NativeScriptModule,
+        DropDownModule,
         
         
     ],

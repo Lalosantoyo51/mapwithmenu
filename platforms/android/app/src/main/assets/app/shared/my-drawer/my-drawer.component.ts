@@ -7,6 +7,7 @@ import { AuthService } from "../../services/auth.service";
 import { RouterExtensions } from "nativescript-angular/router";
 import {MyHttpGetService }from "../../get.services/get.services";
 import { Label } from "ui/label";
+import { UserLocationService } from "../../services/conex/userlocation.service";
 
 /* ***********************************************************
 * Keep data that is displayed in your app drawer in the MyDrawer component class.
@@ -21,9 +22,20 @@ import { Label } from "ui/label";
 
 })
 export class MyDrawerComponent extends Observable {
+    //tipo building id 3
+    //public latitude ="21.876871" ;
+    //public longitude ="-102.262451";
+    //tipo street
+    //public latitude ="21.922501";
+    //public longitude ="-102.304532";
+    //tipo building con el id 1
+    public latitude ="21.913840";
+    public longitude ="-102.315723";
+    public location;
+    public locations;
     public orders:any[];
     public floor:Array<string>
-    public isItemVisible: boolean;
+    public type_places: boolean;
     public myplaces:boolean;
     public getdata: any[];
     public info: Array<string>;
@@ -32,7 +44,7 @@ export class MyDrawerComponent extends Observable {
 
     user;
 
-    constructor( private router : RouterExtensions, private authService:AuthService,private myService: MyHttpGetService ) { 
+    constructor(private userlocation:UserLocationService, private router : RouterExtensions, private authService:AuthService,private myService: MyHttpGetService ) { 
         super();
     }
 
@@ -40,6 +52,7 @@ export class MyDrawerComponent extends Observable {
         this.user = await this.authService.user.toPromise();
       //get data user
         this.getuser();
+        this.postservice()
     }
     
 
@@ -66,6 +79,37 @@ export class MyDrawerComponent extends Observable {
         }); 
     }
         
+    postservice(){
+        this.userlocation.Mypostion({
+            latitude:this.latitude,
+            longitude:this.longitude
+        }).subscribe((profile)=>{
+            //console.log(JSON.stringify(profile));
+            this.locations = profile["Zone"];
+            this.location = [];
+            //console.log(JSON.stringify(this.locations));
+            console.log(this.locations.length)
+            if(this.locations.length ==0){
+                this.router.navigate(['/errors/location'])
+            }
+
+            for (let i = 0; i < this.locations.length; i++) {
+                this.location.push(this.locations[i]['type']);
+                if (this.location == "Street"){
+                    console.log("estas en tipo calle");
+                    this.type_places = false;
+                }else {
+                    console.log("estas en tipo edificio");
+                    this.type_places = true;
+                }
+            }  
+            
+    
+        },(error)=>{
+            console.log(JSON.stringify(error));
+            
+        });
+    }
     async logOut(){
         this.authService.logOut();
         this.router.navigate(['/auth/login'],{ clearHistory:true});

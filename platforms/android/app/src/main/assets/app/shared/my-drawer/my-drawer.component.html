@@ -19,7 +19,9 @@ Feel free to customize layouts and components to change how your app drawer look
             <MyDrawerItem title="Pedidos" route="/orders/order" icon="&#xf007;" [isSelected]="isPageSelected('Inicio')"></MyDrawerItem>
             <MyDrawerItem title="Mensajes" route="/chat/listchat" icon="&#xf075;" [isSelected]="isPageSelected('Mensajes')"></MyDrawerItem>
             <MyDrawerItem title="Mapa" route="/map/map" icon="&#xf007;" [isSelected]="isPageSelected('Mapa')"></MyDrawerItem>
-            <MyDrawerItem title="Intercabio de Mercancia" route="/sellers/selectproducts" icon="&#xf007;" [isSelected]="isPageSelected('Intercambiar')"></MyDrawerItem>
+            <StackLayout [visibility]="type_places ? 'visible' : 'collapsed'">
+                <MyDrawerItem title="Intercabio de Mercancia" route="/sellers/selectproducts" icon="&#xf007;" [isSelected]="isPageSelected('Intercambiar')"></MyDrawerItem>
+            </StackLayout>
             <MyDrawerItem title="Comer" route="/sellers/eat"icon="&#xf129;" [isSelected]="isPageSelected('Comer')"></MyDrawerItem>
             <MyDrawerItem title="Mi perfil" route="/profile" icon="&#xf007;" [isSelected]="isPageSelected('Mi perfil')"></MyDrawerItem>
             <MyDrawerItem title="Aplicación" route="/about" icon="&#xf129;" [isSelected]="isPageSelected('Aplicación')"></MyDrawerItem>
