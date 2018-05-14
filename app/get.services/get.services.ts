@@ -23,6 +23,7 @@ export class MyHttpGetService {
     deletedata(uri){
         let headers = this.createRequestHeader();
         return this.http.delete(this.serverUrl + uri, { headers: headers })
+        .map(res => res);
     }
 
     getResponseInfo() {
@@ -30,6 +31,7 @@ export class MyHttpGetService {
         return this.http.get(this.serverUrl, { headers: headers })
             .do(res =>  res);
     }
+
 
     private createRequestHeader() {
         let headers = new HttpHeaders();

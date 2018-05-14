@@ -10,6 +10,10 @@ import { Observable } from "tns-core-modules/data/observable/observable";
 import { registerElement } from "nativescript-angular";
 import { setTimeout } from "timer";
 import { ScrollEventData } from "ui/scroll-view";
+import { ActivatedRoute, Router } from "@angular/router";
+import { MyHttpGetService } from "../../../get.services/get.services";
+import { CancelOrdenService } from "../../../services/conex/cancel.service";
+import { JsonpInterceptor } from "@angular/common/http";
 let page;
 
 @Component({
@@ -17,10 +21,17 @@ let page;
     moduleId: module.id,
     templateUrl: "./canceled_orders.component.html",
     styleUrls: ['./canceled_orders.component.css'],
+    providers: [MyHttpGetService]
     
 })
 export class Canceled_orders implements OnInit {
+    public order_id;
     @ViewChild("drawer") drawerComponent: RadSideDrawerComponent;
+    constructor(private cancel:CancelOrdenService,private route: ActivatedRoute,private myServive:MyHttpGetService,private router:Router){
+        this.route.queryParams.subscribe(params=>{
+            this.order_id=params['order_id']
+        })
+    }
    
     ngOnInit(): void {
     }
@@ -57,7 +68,31 @@ export class Canceled_orders implements OnInit {
         this.drawerComponent.sideDrawer.showDrawer();
     }
     Confirmar(){
-        console.log(this.tvtext)
+        this.postcomment();
+    }
+    deleteorder(){
+        this.myServive.deletedata('order/'+this.order_id+'/destroy')
+        .subscribe((data)=>{
+            console.log(JSON.stringify(data))
+            
+        })
+    }
+    postcomment(){
+        this.cancel.cancel_orden({
+            id:this.order_id,
+            comment:this.tvtext,
+        }).subscribe((data)=>{
+            console.log(JSON.stringify(data))
+            if(data == null){
+                console.log('se registro ')
+                this.deleteorder();
+                this.router.navigate(['orders/order'])
+            }
+        },(error)=>{
+            console.log(JSON.stringify(error));
+            
+        });   
+
     }
 
 }

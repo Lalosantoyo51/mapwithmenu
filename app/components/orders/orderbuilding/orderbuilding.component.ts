@@ -4,7 +4,8 @@ import { RadSideDrawerComponent } from "nativescript-pro-ui/sidedrawer/angular";
 import { Label } from "ui/label";
 import * as utils from "utils/utils";
 import { MyHttpGetService } from "../../../get.services/get.services";
-import { Router } from "@angular/router";
+import { Router, NavigationExtras } from "@angular/router";
+import { RouterExtensions } from "nativescript-angular";
 @Component({
     selector: "ns-ordersbuilding",
     moduleId: module.id,
@@ -22,7 +23,7 @@ export class OrdersbuildingComponent implements OnInit {
     public orders;
     public building;
     @ViewChild("drawer") drawerComponent: RadSideDrawerComponent;
-    constructor(private myService: MyHttpGetService, private router:Router){}
+    constructor(private myService: MyHttpGetService,private router : RouterExtensions){}
     ngOnInit(): void {
        this.getdata();
    
@@ -91,10 +92,17 @@ export class OrdersbuildingComponent implements OnInit {
     }
     update(){
         this.getdata();
+        this.router.navigate(['/orders/canceled_orders'])
 
     }
-    canceled_orders(){
-        this.router.navigate(['/orders/canceled_orders']);
+    canceled_orders(ordenes){
+        console.log(ordenes);
+        let navigationextras: NavigationExtras={
+            queryParams: {
+                "order_id":ordenes
+            }
+        } 
+        this.router.navigate(['/orders/canceled_orders'],navigationextras);
     }
     deliveries(ordenes){
         console.log(ordenes)

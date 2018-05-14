@@ -34,7 +34,7 @@
                     </StackLayout>
                     <GridLayout  rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" col="2" row="1">
                             <Button col="1" text="&#xf206;"class="fa fa-trash-o" style="font-size:24px;"(tap)="deliveries(orden.id)" height="60" width="55"></Button>
-                            <Button  *ngIf="orden.payment_type =='Cash'" col="2" text="&#xf00d;"class="fa fa-trash-o" style="font-size:24px;"(tap)="canceled_orders()" height="60" width="55"></Button>  
+                            <Button  *ngIf="orden.payment_type =='Cash'" col="2" text="&#xf00d;"class="fa fa-trash-o" style="font-size:24px;"(tap)="canceled_orders(orden.id)" height="60" width="55"></Button>  
                     </GridLayout>
                     </GridLayout>
             </CardView>

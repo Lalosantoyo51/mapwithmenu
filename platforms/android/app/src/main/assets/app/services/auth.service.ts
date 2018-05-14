@@ -8,7 +8,7 @@ import { User } from "../models/user.model";
 export class AuthService {
     private GRANT_TYPE : string = 'password';
     private CLIENT_ID : number = 2;
-    private CLIENT_SECRET : string = '9mF2uNLqDBpMv3iHaFaQbCyIZgscIzgkcG4qkLgA';
+    private CLIENT_SECRET : string = 'MA6yVslhlIbOB6is1thBk5GkxtUWXwicYLLu95C8';
     private SCOPE: string = '*';
     private SERVER_URL : string = 'http://192.168.0.113:8000/';
     public API_URL : string = this.SERVER_URL + 'api/v1/';

@@ -12,6 +12,8 @@ import { AuthService2 } from "./services/conex/conex.service";
 import { UserLocationService}from "./services/conex/userlocation.service";
 import { Placestreet } from "./services/conex/locationstreet.service";
 import { ProductExchangeService } from "./services/conex/exchange.service";
+import { CancelOrdenService } from "./services/conex/cancel.service";
+
 @NgModule({
     bootstrap: [
         AppComponent
@@ -28,6 +30,7 @@ import { ProductExchangeService } from "./services/conex/exchange.service";
         AppComponent
     ],
     providers: [
+        CancelOrdenService,
         ProductExchangeService,
         Placestreet,
         UserLocationService,
