@@ -14,6 +14,8 @@ import { ActivatedRoute, Router } from "@angular/router";
 import { MyHttpGetService } from "../../../get.services/get.services";
 import { CancelOrdenService } from "../../../services/conex/cancel.service";
 import { JsonpInterceptor } from "@angular/common/http";
+import { AuthService } from "../../../services/auth.service";
+import {User} from "../../../models/user.model"
 let page;
 
 @Component({
@@ -25,15 +27,17 @@ let page;
     
 })
 export class Canceled_orders implements OnInit {
+    user
     public order_id;
     @ViewChild("drawer") drawerComponent: RadSideDrawerComponent;
-    constructor(private cancel:CancelOrdenService,private route: ActivatedRoute,private myServive:MyHttpGetService,private router:Router){
+    constructor(private authService:AuthService,private cancel:CancelOrdenService,private route: ActivatedRoute,private myServive:MyHttpGetService,private router:Router){
         this.route.queryParams.subscribe(params=>{
             this.order_id=params['order_id']
         })
     }
    
-    ngOnInit(): void {
+    async ngOnInit() {
+        this.user = await this.authService.user.toPromise();
     }
     public editState = true;
     public tvtext = "";
@@ -71,7 +75,7 @@ export class Canceled_orders implements OnInit {
         this.postcomment();
     }
     deleteorder(){
-        this.myServive.deletedata('order/'+this.order_id+'/destroy')
+        this.myServive.deletedata('user/'+this.user.id+'/order/'+this.order_id+'/destroy')
         .subscribe((data)=>{
             console.log(JSON.stringify(data))
             

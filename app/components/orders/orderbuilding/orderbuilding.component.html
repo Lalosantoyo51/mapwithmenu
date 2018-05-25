@@ -1,23 +1,4 @@
-<StackLayout>
-        <CardView class="cardStyle" margin="10" elevation="30" radius="1" >
-            <GridLayout  rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto">
-                <StackLayout class="placesainfo" row="0" col="1">
-                    <GridLayout columns="auto, *" class="location">
-                        <Label class="myplaces" row="0" col="0" text="Pedido para "></Label>
-                        <Label class="myplaces"  row="0" col="1" text=" Julio García"></Label>                                                 
-                    </GridLayout>
-                    <label text="2 Burritos de verde"></label>
-                    <label text="4 Burritos de rojo"></label>
-                    <label text="1 Burritos de verde"></label>
-                    <GridLayout columns="auto, *" class="location">
-                        <Label col="0" text="&#xf041;" class="fa"></Label>
-                        <Label col="1" text="Av. Universidad #940, Cd. Universitaria, C.P. 20131" class="p-r-10"textWrap="true"></Label>
-                    </GridLayout>
-                </StackLayout> 
-            </GridLayout>
-        </CardView>     
-    </StackLayout>  
-    <StackLayout *ngFor="let orden of ordenes">
+<StackLayout *ngFor="let orden of ordenes" >
             <CardView class="cardStyle" margin="10" elevation="10" radius="3" >
                     <GridLayout  rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto" columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto">
                     <StackLayout col="1" row="1" class="placesainfo">
@@ -39,5 +20,9 @@
                     </GridLayout>
             </CardView>
         </StackLayout>
-        <button text="actualizar" (tap)="update()"></button>
+        <button text="actualizar" (tap)="update()" [visibility]="btn ? 'visible' : 'collapsed'"></button>
+        <StackLayout  class="zona"[visibility]="empty ? 'visible' : 'collapsed'" >
+            <img  src="~/assets/crying-emoticon-rounded-square-face.png" height="200px" class="imgzona" >
+        <label  horizontalAlignment="center" class="without_purchases" text="No tienes ordenes"></label>
+    </StackLayout>
                     

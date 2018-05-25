@@ -14,6 +14,9 @@ import { RouterExtensions } from "nativescript-angular";
     providers:[MyHttpGetService]
 })
 export class OrdersbuildingComponent implements OnInit {
+    public btn:boolean;
+    public info_ordenes:boolean;
+    public empty:boolean;
     public name ;
     public Products: any[];
     public purchases :any[];
@@ -40,6 +43,11 @@ export class OrdersbuildingComponent implements OnInit {
         this.myService.getData('seller/4/orders')
         .subscribe((data) => {
             this.purchases =data['order'] ;
+             if(this.purchases.length ==0){
+                 this.empty=true 
+                 this.btn =false
+                 this.info_ordenes=false
+             }
             //console.log(JSON.stringify(data['purchases']))
            /*  console.log(this.purchases[0]["id"]);
             console.log(JSON.stringify(this.purchases[0]["detail_purchases"]))
@@ -51,6 +59,7 @@ export class OrdersbuildingComponent implements OnInit {
             console.log("sdadsa")
             console.log(this.purchases.length);
                 for (let i = 0; i < this.purchases.length; i++) {
+                    this.btn=true;
                     this.orders = this.purchases[i]["id"]
                     console.log("orden")
                    console.log(JSON.stringify(this.purchases[i]["id"]));
